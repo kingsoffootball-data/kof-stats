@@ -1,0 +1,1093 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treue Seelen – Welt 2</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .filters {
+            margin-bottom: 1em;
+        }
+        .filters label {
+            margin-right: 10px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead th {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Treue Seelen – Welt 2</h2>
+
+<div class="filters">
+    <label for="filterLand"><strong>Land:</strong></label>
+    <select id="filterLand"><option value="">Alle</option></select>
+</div>
+
+<div class="table-container">
+<table id="treueTabelle" class="display" style="width:100%">
+    <thead>
+        <tr><th>Rang</th><th>Manager</th><th>Verein</th><th>Land</th><th>Anzahl Tage</th><th>Anfang</th><th>Ende</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><td>gelöscht</td><td>Sportivo Burgos</td><td>Spanien</td><td>3105</td><td>2017-01-08</td><td>2025-07-10</td></tr>
+<tr><td>2</td><td>Tiescha</td><td>KF Lamia 1965</td><td>Griechenland</td><td>3103</td><td>2017-01-10</td><td>nan</td></tr>
+<tr><td>3</td><td>Zottelkralle</td><td>SpVgg M´gladbach</td><td>Deutschland</td><td>3085</td><td>2017-01-28</td><td>nan</td></tr>
+<tr><td>4</td><td>Meier</td><td>FC Brinkum</td><td>Deutschland</td><td>3030</td><td>2017-03-24</td><td>nan</td></tr>
+<tr><td>5</td><td>Sventullen</td><td>AS Oostende</td><td>Belgien</td><td>2994</td><td>2017-04-29</td><td>nan</td></tr>
+<tr><td>6</td><td>Mussigger</td><td>Duisburg Zebras</td><td>Deutschland</td><td>2973</td><td>2017-05-20</td><td>nan</td></tr>
+<tr><td>7</td><td>Atze Anders </td><td>FFC Malchow</td><td>Deutschland</td><td>2970</td><td>2017-05-23</td><td>nan</td></tr>
+<tr><td>8</td><td>T.B. Lebowski</td><td>Everton Soccer</td><td>England</td><td>2900</td><td>2017-08-01</td><td>nan</td></tr>
+<tr><td>9</td><td>moupep</td><td>ALS Auxerre</td><td>Frankreich</td><td>2869</td><td>2017-09-01</td><td>nan</td></tr>
+<tr><td>10</td><td>Big Loosee</td><td>Žaugija Vilnius</td><td>Litauen</td><td>2868</td><td>2017-09-02</td><td>nan</td></tr>
+<tr><td>11</td><td>Roman Urinstein</td><td>Macclesfield Roses</td><td>England</td><td>2868</td><td>2017-09-02</td><td>nan</td></tr>
+<tr><td>12</td><td>Heinz Krügel </td><td>Union Magdeburg</td><td>Deutschland</td><td>2863</td><td>2017-09-07</td><td>nan</td></tr>
+<tr><td>13</td><td>Dino</td><td>Eintracht Hadamar</td><td>Deutschland</td><td>2859</td><td>2017-09-11</td><td>nan</td></tr>
+<tr><td>14</td><td>Chauti</td><td>Könizer SK</td><td>Schweiz</td><td>2859</td><td>2017-09-11</td><td>nan</td></tr>
+<tr><td>15</td><td>Roversnake</td><td>Sedan FAC</td><td>Frankreich</td><td>2838</td><td>2017-10-02</td><td>nan</td></tr>
+<tr><td>16</td><td>rudy</td><td>FVV Hamburg</td><td>Deutschland</td><td>2822</td><td>2017-03-25</td><td>2024-12-15</td></tr>
+<tr><td>17</td><td>Badoc</td><td>SpVgg Münster 1908</td><td>Deutschland</td><td>2765</td><td>2017-12-14</td><td>nan</td></tr>
+<tr><td>18</td><td>Nerdo</td><td>AFK Karbach</td><td>Deutschland</td><td>2756</td><td>2017-05-17</td><td>2024-12-02</td></tr>
+<tr><td>19</td><td>Pep Pep</td><td>TSG Goslar 1923</td><td>Deutschland</td><td>2756</td><td>2017-12-23</td><td>nan</td></tr>
+<tr><td>20</td><td>Christian Knuth </td><td>Fryslân Heerenveen</td><td>Niederlande</td><td>2751</td><td>2017-12-28</td><td>nan</td></tr>
+<tr><td>21</td><td>OttoOhnmacht</td><td>Hednesford Unity</td><td>England</td><td>2737</td><td>2017-01-08</td><td>2024-07-07</td></tr>
+<tr><td>22</td><td>Stefan1980</td><td>FS Brøndby</td><td>Dänemark</td><td>2728</td><td>2018-01-20</td><td>nan</td></tr>
+<tr><td>23</td><td>JanErik</td><td>Lohfelder FC</td><td>Deutschland</td><td>2715</td><td>2018-02-02</td><td>nan</td></tr>
+<tr><td>24</td><td>EV67</td><td>Rudar Kerkrade</td><td>Niederlande</td><td>2699</td><td>2018-02-18</td><td>nan</td></tr>
+<tr><td>25</td><td>Jaaduuuxx</td><td>FC Mytilene 1995</td><td>Griechenland</td><td>2667</td><td>2018-03-22</td><td>nan</td></tr>
+<tr><td>26</td><td>Bernhard K.</td><td>Borussia Wegberg</td><td>Deutschland</td><td>2665</td><td>2018-03-24</td><td>nan</td></tr>
+<tr><td>27</td><td>MV85</td><td>Borussia Bautzen</td><td>Deutschland</td><td>2662</td><td>2018-03-27</td><td>nan</td></tr>
+<tr><td>28</td><td>Flo82</td><td>Leicester Town</td><td>England</td><td>2661</td><td>2018-03-28</td><td>nan</td></tr>
+<tr><td>29</td><td>MattEagle2000</td><td>Sportiva Novara</td><td>Italien</td><td>2631</td><td>2017-09-23</td><td>2024-12-06</td></tr>
+<tr><td>30</td><td>Levo</td><td>Real Majadahonda</td><td>Spanien</td><td>2589</td><td>2017-09-01</td><td>2024-10-03</td></tr>
+<tr><td>31</td><td>Simba_2902</td><td>Sachen Markranstädt</td><td>Deutschland</td><td>2524</td><td>2017-05-12</td><td>2024-04-09</td></tr>
+<tr><td>32</td><td>Ascaron</td><td>WFFK Rödinghausen</td><td>Deutschland</td><td>2504</td><td>2018-09-01</td><td>nan</td></tr>
+<tr><td>33</td><td>Sebastian</td><td>Holstein Flensburg</td><td>Deutschland</td><td>2489</td><td>2018-09-16</td><td>nan</td></tr>
+<tr><td>34</td><td>Baumi8</td><td>Kriminalno Split</td><td>Kroatien</td><td>2445</td><td>2018-10-30</td><td>nan</td></tr>
+<tr><td>35</td><td>Gertjan</td><td>Eintracht Bochum</td><td>Deutschland</td><td>2437</td><td>2018-11-07</td><td>nan</td></tr>
+<tr><td>36</td><td>DerCartman</td><td>Barnet Union</td><td>England</td><td>2435</td><td>2018-11-09</td><td>nan</td></tr>
+<tr><td>37</td><td>Der Unerreichbare</td><td>SD Granada</td><td>Spanien</td><td>2342</td><td>2019-02-10</td><td>nan</td></tr>
+<tr><td>38</td><td>Kimbo</td><td>Victória Estoril</td><td>Portugal</td><td>2340</td><td>2019-02-12</td><td>nan</td></tr>
+<tr><td>39</td><td>Bandog040</td><td>1.SSV St. Pauli</td><td>Deutschland</td><td>2337</td><td>2019-02-15</td><td>nan</td></tr>
+<tr><td>40</td><td>Castrofido</td><td>Canvey Sunshine</td><td>England</td><td>2316</td><td>2019-03-08</td><td>nan</td></tr>
+<tr><td>41</td><td>elManu83</td><td>SSC Erfurt</td><td>Deutschland</td><td>2279</td><td>2017-08-11</td><td>2023-11-07</td></tr>
+<tr><td>42</td><td>Hilfiger</td><td>Športový Trenčín</td><td>Slowakei</td><td>2273</td><td>2019-04-20</td><td>nan</td></tr>
+<tr><td>43</td><td>Patrick1985</td><td>RSV Lingen</td><td>Deutschland</td><td>2223</td><td>2019-06-09</td><td>nan</td></tr>
+<tr><td>44</td><td>M4NU</td><td>KF Eagles Blagoevgrad </td><td>Bulgarien</td><td>2210</td><td>2018-07-18</td><td>2024-08-05</td></tr>
+<tr><td>45</td><td>WebSTAR</td><td>FC Inter Znojmo</td><td>Tschechien</td><td>2198</td><td>2018-05-10</td><td>2024-05-16</td></tr>
+<tr><td>46</td><td>Lordy</td><td>Northampton Cobs</td><td>England</td><td>2186</td><td>2019-07-16</td><td>nan</td></tr>
+<tr><td>47</td><td>eldude</td><td>Sportfreunde Spielberg</td><td>Deutschland</td><td>2174</td><td>2019-07-28</td><td>nan</td></tr>
+<tr><td>48</td><td>Chris82s </td><td>SFV Koblenz</td><td>Deutschland</td><td>2159</td><td>2019-08-12</td><td>nan</td></tr>
+<tr><td>49</td><td>Blemes</td><td>RBS Pforzheim</td><td>Deutschland</td><td>2159</td><td>2019-08-12</td><td>nan</td></tr>
+<tr><td>50</td><td>Manolo1211</td><td>Preston City</td><td>England</td><td>2120</td><td>2019-09-20</td><td>nan</td></tr>
+<tr><td>51</td><td>Suci</td><td>Tottenham Rooster</td><td>England</td><td>2114</td><td>2018-10-04</td><td>2024-07-18</td></tr>
+<tr><td>52</td><td>Pöo6öeg</td><td>SC Wecker Innsbruck</td><td>Österreich</td><td>2089</td><td>2017-09-06</td><td>2023-05-27</td></tr>
+<tr><td>53</td><td>Mr.G</td><td>Watford Elks</td><td>England</td><td>2075</td><td>2018-03-02</td><td>2023-11-06</td></tr>
+<tr><td>54</td><td>Baschen </td><td>FC Miranda</td><td>Spanien</td><td>2070</td><td>2017-11-08</td><td>2023-07-10</td></tr>
+<tr><td>55</td><td>Viking_Horde</td><td>Truro Wildcats</td><td>England</td><td>2052</td><td>2019-11-27</td><td>nan</td></tr>
+<tr><td>56</td><td>Kinimod</td><td>RPF Kaiserslautern</td><td>Deutschland</td><td>2045</td><td>2018-02-27</td><td>2023-10-04</td></tr>
+<tr><td>57</td><td>Manni I</td><td>WFV Ennepetal</td><td>Deutschland</td><td>2041</td><td>2017-01-18</td><td>2022-08-21</td></tr>
+<tr><td>58</td><td>Pözy</td><td>Red Wings Salzburg</td><td>Österreich</td><td>2029</td><td>2019-12-20</td><td>nan</td></tr>
+<tr><td>59</td><td>Heuberg </td><td>Bavaria Buchbach</td><td>Deutschland</td><td>2026</td><td>2019-12-20</td><td>2025-07-07</td></tr>
+<tr><td>60</td><td>Tarantino</td><td>KV Lahti</td><td>Finnland</td><td>2017</td><td>2017-08-31</td><td>2023-03-10</td></tr>
+<tr><td>61</td><td>Hummel05</td><td>Crawley Sports</td><td>England</td><td>2015</td><td>2017-05-22</td><td>2022-11-27</td></tr>
+<tr><td>62</td><td>Pike</td><td>Chelsea Soccer</td><td>England</td><td>2010</td><td>2020-01-08</td><td>nan</td></tr>
+<tr><td>63</td><td>Betriebsprüfer</td><td>HSV Rathenow</td><td>Deutschland</td><td>2003</td><td>2018-09-15</td><td>2024-03-10</td></tr>
+<tr><td>64</td><td>Nordlicht76</td><td>Leyton London</td><td>England</td><td>2003</td><td>2019-06-26</td><td>2024-12-19</td></tr>
+<tr><td>65</td><td>Mr.Nugget </td><td>Sportive Épinal</td><td>Frankreich</td><td>1998</td><td>2020-01-20</td><td>nan</td></tr>
+<tr><td>66</td><td>Peetyplatsch</td><td>Pats Dublin CF</td><td>Irland</td><td>1965</td><td>2017-06-13</td><td>2022-10-30</td></tr>
+<tr><td>67</td><td>1860Lugge</td><td>SK Münchener Löwen</td><td>Deutschland</td><td>1964</td><td>2020-02-23</td><td>nan</td></tr>
+<tr><td>68</td><td>Asdff</td><td>Uskeris Utena</td><td>Litauen</td><td>1956</td><td>2020-03-02</td><td>nan</td></tr>
+<tr><td>69</td><td>Danielko</td><td>Hansa Barmbek</td><td>Deutschland</td><td>1952</td><td>2020-03-06</td><td>nan</td></tr>
+<tr><td>70</td><td>Atomi</td><td>Corby Athletic</td><td>England</td><td>1936</td><td>2017-05-03</td><td>2022-08-21</td></tr>
+<tr><td>71</td><td>Hsvhsv</td><td>DFC Fortuna Berlin</td><td>Deutschland</td><td>1925</td><td>2017-11-30</td><td>2023-03-09</td></tr>
+<tr><td>72</td><td>Bierbaron</td><td>1. FV Würzburg</td><td>Deutschland</td><td>1922</td><td>2020-04-05</td><td>nan</td></tr>
+<tr><td>73</td><td>Revilo123 </td><td>FC Helsingstars</td><td>Finnland</td><td>1919</td><td>2017-11-17</td><td>2023-02-18</td></tr>
+<tr><td>74</td><td>Op79</td><td>Royal Tilburg</td><td>Niederlande</td><td>1915</td><td>2020-04-12</td><td>nan</td></tr>
+<tr><td>75</td><td>BastiMasters</td><td>Esportiu Reus</td><td>Spanien</td><td>1899</td><td>2019-02-25</td><td>2024-05-08</td></tr>
+<tr><td>76</td><td>Jay Jay Okocha</td><td>Royal Madrid</td><td>Spanien</td><td>1899</td><td>2020-04-28</td><td>nan</td></tr>
+<tr><td>77</td><td>Kalam</td><td>VfL Altenholz</td><td>Deutschland</td><td>1881</td><td>2017-09-01</td><td>2022-10-26</td></tr>
+<tr><td>78</td><td>Robert1999</td><td>SpVgg Hauenstein</td><td>Deutschland</td><td>1877</td><td>2018-03-29</td><td>2023-05-19</td></tr>
+<tr><td>79</td><td>Killigang</td><td>FK Fanorbohçe</td><td>Türkei</td><td>1839</td><td>2018-01-16</td><td>2023-01-29</td></tr>
+<tr><td>80</td><td>The only Huppi</td><td>Maastrichter FC</td><td>Niederlande</td><td>1830</td><td>2020-07-06</td><td>nan</td></tr>
+<tr><td>81</td><td>Bernd993 </td><td>Germania Paris</td><td>Frankreich</td><td>1823</td><td>2020-07-13</td><td>nan</td></tr>
+<tr><td>82</td><td>MetheMaster</td><td>WFK Paderborn</td><td>Deutschland</td><td>1784</td><td>2017-10-02</td><td>2022-08-21</td></tr>
+<tr><td>83</td><td>McMauzMoe</td><td>Hansa Bremen</td><td>Deutschland</td><td>1777</td><td>2020-02-25</td><td>2025-01-06</td></tr>
+<tr><td>84</td><td>Jens Keller</td><td>SAK Klagenfurt</td><td>Österreich</td><td>1773</td><td>2017-12-25</td><td>2022-11-02</td></tr>
+<tr><td>85</td><td>Stevie Lucian</td><td>Hull Tigers</td><td>England</td><td>1771</td><td>2020-09-03</td><td>nan</td></tr>
+<tr><td>86</td><td>Aprilia</td><td>Rotherham County</td><td>England</td><td>1765</td><td>2020-09-09</td><td>nan</td></tr>
+<tr><td>87</td><td>Doug80</td><td>London Gunners</td><td>England</td><td>1764</td><td>2020-01-11</td><td>2024-11-09</td></tr>
+<tr><td>88</td><td>OhOh</td><td>Berlin United</td><td>Deutschland</td><td>1733</td><td>2020-10-11</td><td>nan</td></tr>
+<tr><td>89</td><td>Lasse74</td><td>HSV Concorde</td><td>Deutschland</td><td>1697</td><td>2017-08-18</td><td>2022-04-11</td></tr>
+<tr><td>90</td><td>Kaikrates</td><td>Spartak Podbrezová</td><td>Slowakei</td><td>1697</td><td>2018-12-20</td><td>2023-08-13</td></tr>
+<tr><td>91</td><td>Ohneworte76</td><td>FK Sachsen Aue</td><td>Deutschland</td><td>1692</td><td>2018-09-09</td><td>2023-04-28</td></tr>
+<tr><td>92</td><td>Samuel Punk</td><td>FK Raptor Wien</td><td>Österreich</td><td>1683</td><td>2020-11-30</td><td>nan</td></tr>
+<tr><td>93</td><td>swewewe</td><td>SSC Gillingham 1898</td><td>England</td><td>1674</td><td>2018-01-20</td><td>2022-08-21</td></tr>
+<tr><td>94</td><td>Timber</td><td>FK Ajaccio</td><td>Frankreich</td><td>1673</td><td>2017-05-28</td><td>2021-12-26</td></tr>
+<tr><td>95</td><td>Marty P.</td><td>Kilkee FC</td><td>Irland</td><td>1668</td><td>2020-12-15</td><td>nan</td></tr>
+<tr><td>96</td><td>Lee Johner </td><td>FC Stoke 1865</td><td>England</td><td>1664</td><td>2019-03-10</td><td>2023-09-29</td></tr>
+<tr><td>97</td><td>flitzpiepe</td><td>VfB Chemnitz</td><td>Deutschland</td><td>1662</td><td>2020-12-21</td><td>nan</td></tr>
+<tr><td>98</td><td>Pigolotti</td><td>KSK Gent</td><td>Belgien</td><td>1628</td><td>2018-12-12</td><td>2023-05-28</td></tr>
+<tr><td>99</td><td>Paul Carlson</td><td>VFC Zlaté Moravce</td><td>Slowakei</td><td>1623</td><td>2020-06-02</td><td>2024-11-11</td></tr>
+<tr><td>100</td><td>Schnitzel 5 kg</td><td>Dundalk Soccer</td><td>Irland</td><td>1620</td><td>2021-02-01</td><td>nan</td></tr>
+<tr><td>101</td><td>Omit</td><td>Lappi Rovaniemi</td><td>Finnland</td><td>1610</td><td>2020-11-10</td><td>2025-04-08</td></tr>
+<tr><td>102</td><td>1895</td><td>Victoria Düsseldorf</td><td>Deutschland</td><td>1607</td><td>2021-02-14</td><td>nan</td></tr>
+<tr><td>103</td><td>Riesling</td><td>SSC Altach</td><td>Österreich</td><td>1595</td><td>2021-02-26</td><td>nan</td></tr>
+<tr><td>104</td><td>Mix287</td><td>Dynamo Zwickau</td><td>Deutschland</td><td>1580</td><td>2021-03-13</td><td>nan</td></tr>
+<tr><td>105</td><td>Weddiminator</td><td>AC Sportivo Madrid</td><td>Spanien</td><td>1577</td><td>2020-02-04</td><td>2024-05-30</td></tr>
+<tr><td>106</td><td>DjangoX</td><td>Mainzer FC</td><td>Deutschland</td><td>1546</td><td>2021-04-16</td><td>nan</td></tr>
+<tr><td>107</td><td>KIRSCHNER84 Branne</td><td>SK Eugendorf</td><td>Österreich</td><td>1538</td><td>2020-03-02</td><td>2024-05-18</td></tr>
+<tr><td>108</td><td>Recra33</td><td>BBC Bissingen</td><td>Deutschland</td><td>1537</td><td>2018-06-15</td><td>2022-08-30</td></tr>
+<tr><td>109</td><td>huniobba</td><td>AS Wasquehal</td><td>Frankreich</td><td>1523</td><td>2018-01-17</td><td>2022-03-20</td></tr>
+<tr><td>110</td><td>Sebel</td><td>Wigan Dynamic</td><td>England</td><td>1521</td><td>2020-05-10</td><td>2024-07-09</td></tr>
+<tr><td>111</td><td>J. R.</td><td>Aias Amsterdam FK</td><td>Niederlande</td><td>1505</td><td>2020-04-14</td><td>2024-05-28</td></tr>
+<tr><td>112</td><td>m4St3r_9</td><td>Usk Newport</td><td>England</td><td>1486</td><td>2017-05-21</td><td>2021-06-15</td></tr>
+<tr><td>113</td><td>DjangoX</td><td>FSV Stuttgart</td><td>Deutschland</td><td>1481</td><td>2017-03-26</td><td>2021-04-15</td></tr>
+<tr><td>114</td><td>SGEintracht</td><td>FKPG Saalfelden</td><td>Österreich</td><td>1464</td><td>2018-05-07</td><td>2022-05-10</td></tr>
+<tr><td>115</td><td>#David</td><td>Mainzer FC</td><td>Deutschland</td><td>1463</td><td>2017-04-06</td><td>2021-04-08</td></tr>
+<tr><td>116</td><td>Windennis</td><td>SGE Rheine</td><td>Deutschland</td><td>1441</td><td>2017-09-01</td><td>2021-08-12</td></tr>
+<tr><td>117</td><td>Matthias Fleischmann</td><td>Kleeblatt Oberhausen</td><td>Deutschland</td><td>1438</td><td>2017-08-31</td><td>2021-08-08</td></tr>
+<tr><td>118</td><td>Kulik</td><td>FV Schalke 1905</td><td>Deutschland</td><td>1432</td><td>2017-05-18</td><td>2021-04-19</td></tr>
+<tr><td>119</td><td>LeoLutz</td><td>FK Leverkusen</td><td>Deutschland</td><td>1423</td><td>2021-08-17</td><td>nan</td></tr>
+<tr><td>120</td><td>Basti 3</td><td>NJL Farum</td><td>Dänemark</td><td>1422</td><td>2017-09-03</td><td>2021-07-26</td></tr>
+<tr><td>121</td><td>Moritz1990</td><td>Ratinger SC 1905</td><td>Deutschland</td><td>1418</td><td>2021-08-22</td><td>nan</td></tr>
+<tr><td>122</td><td>MightyMo</td><td>GIF Kalmar</td><td>Schweden</td><td>1405</td><td>2018-11-07</td><td>2022-09-12</td></tr>
+<tr><td>123</td><td>Jack Black!</td><td>FK Baden Heiligenkreuz</td><td>Österreich</td><td>1404</td><td>2020-06-24</td><td>2024-04-28</td></tr>
+<tr><td>124</td><td>Winfling</td><td>SSC Halle</td><td>Deutschland</td><td>1397</td><td>2018-08-29</td><td>2022-06-26</td></tr>
+<tr><td>125</td><td>Acemcmuhl</td><td>SSC Kallithea</td><td>Griechenland</td><td>1392</td><td>2017-01-11</td><td>2020-11-03</td></tr>
+<tr><td>126</td><td>Wamb0</td><td>FV Venlo 02</td><td>Niederlande</td><td>1386</td><td>2017-08-09</td><td>2021-05-26</td></tr>
+<tr><td>127</td><td>Domnitsch</td><td>AJ Valenciennes</td><td>Frankreich</td><td>1384</td><td>2017-05-15</td><td>2021-02-27</td></tr>
+<tr><td>128</td><td>RosarioBrancato</td><td>Intra Mailand</td><td>Italien</td><td>1384</td><td>2021-09-25</td><td>nan</td></tr>
+<tr><td>129</td><td>Ric.chen</td><td>Germania Cloppenburg</td><td>Deutschland</td><td>1383</td><td>2017-07-13</td><td>2021-04-26</td></tr>
+<tr><td>130</td><td>Omi Nös</td><td>FC Roma</td><td>Italien</td><td>1370</td><td>2020-03-15</td><td>2023-12-15</td></tr>
+<tr><td>131</td><td>Matthias Fleischmann</td><td>FV Nürnberg 1907</td><td>Deutschland</td><td>1365</td><td>2021-10-14</td><td>nan</td></tr>
+<tr><td>132</td><td>König Matze</td><td>Rot-Blau Bonn</td><td>Deutschland</td><td>1364</td><td>2019-09-23</td><td>2023-06-18</td></tr>
+<tr><td>133</td><td>Micoud</td><td>VfL Braunschweig</td><td>Deutschland</td><td>1363</td><td>2018-05-21</td><td>2022-02-12</td></tr>
+<tr><td>134</td><td>Dada</td><td>AFC Hemel</td><td>England</td><td>1360</td><td>2017-05-25</td><td>2021-02-13</td></tr>
+<tr><td>135</td><td>Pagge</td><td>Latium Rom</td><td>Italien</td><td>1358</td><td>2021-10-21</td><td>nan</td></tr>
+<tr><td>136</td><td>Fritten Jupp</td><td>FK Eindhoven City</td><td>Niederlande</td><td>1347</td><td>2017-06-18</td><td>2021-02-24</td></tr>
+<tr><td>137</td><td>Shamrock</td><td>AS Jerez</td><td>Spanien</td><td>1346</td><td>2021-11-02</td><td>nan</td></tr>
+<tr><td>138</td><td>Stephen Toggle</td><td>SSC Kallithea</td><td>Griechenland</td><td>1333</td><td>2021-11-15</td><td>nan</td></tr>
+<tr><td>139</td><td>RoKa</td><td>CD Málaga</td><td>Spanien</td><td>1318</td><td>2021-11-30</td><td>nan</td></tr>
+<tr><td>140</td><td>1895</td><td>TuS Meerbusch 65</td><td>Deutschland</td><td>1315</td><td>2017-07-09</td><td>2021-02-13</td></tr>
+<tr><td>141</td><td>Sir Aleks</td><td>FKV Köln</td><td>Deutschland</td><td>1313</td><td>2020-05-10</td><td>2023-12-14</td></tr>
+<tr><td>142</td><td>heile</td><td>SSC Bremen 1915</td><td>Deutschland</td><td>1307</td><td>2019-09-30</td><td>2023-04-29</td></tr>
+<tr><td>143</td><td>Razanauskas</td><td>IS Östersund</td><td>Schweden</td><td>1306</td><td>2021-08-27</td><td>2025-03-25</td></tr>
+<tr><td>144</td><td>Omit</td><td>Eteenpäin Valkeakoski</td><td>Finnland</td><td>1305</td><td>2017-04-14</td><td>2020-11-09</td></tr>
+<tr><td>145</td><td>Ralphi86</td><td>JK Tallinn</td><td>Estland</td><td>1304</td><td>2020-06-23</td><td>2024-01-18</td></tr>
+<tr><td>146</td><td>olly79</td><td>Mało Kraków</td><td>Polen</td><td>1303</td><td>2017-06-27</td><td>2021-01-20</td></tr>
+<tr><td>147</td><td>Maricimo</td><td>Naproijed Sisak</td><td>Kroatien</td><td>1299</td><td>2017-06-18</td><td>2021-01-07</td></tr>
+<tr><td>148</td><td>Therapeut</td><td>Leipziger SV</td><td>Deutschland</td><td>1290</td><td>2018-11-07</td><td>2022-05-20</td></tr>
+<tr><td>149</td><td>King Jay</td><td>Breisgauer SV</td><td>Deutschland</td><td>1285</td><td>2022-01-02</td><td>nan</td></tr>
+<tr><td>150</td><td>BillyKing</td><td>Sliema Nomads</td><td>Malta</td><td>1277</td><td>2018-03-16</td><td>2021-09-13</td></tr>
+<tr><td>151</td><td>Runningwild</td><td>Jizera Boleslav</td><td>Tschechien</td><td>1277</td><td>2018-09-20</td><td>2022-03-20</td></tr>
+<tr><td>152</td><td>Chris2311</td><td>Ballsport Dortmund</td><td>Deutschland</td><td>1273</td><td>2019-08-13</td><td>2023-02-06</td></tr>
+<tr><td>153</td><td>Alfred Jacklord </td><td>SK Austrien Wien</td><td>Österreich</td><td>1272</td><td>2018-01-17</td><td>2021-07-12</td></tr>
+<tr><td>154</td><td>TheTruth</td><td>CV Milan</td><td>Italien</td><td>1271</td><td>2018-11-11</td><td>2022-05-05</td></tr>
+<tr><td>155</td><td>Erjot</td><td>MFC Budapest</td><td>Ungarn</td><td>1268</td><td>2017-05-16</td><td>2020-11-04</td></tr>
+<tr><td>156</td><td>Maxwin</td><td>Zmajevi Voždovac</td><td>Serbien</td><td>1247</td><td>2018-04-30</td><td>2021-09-28</td></tr>
+<tr><td>157</td><td>Michael Knarr</td><td>Army Fleetwood</td><td>England</td><td>1226</td><td>2017-01-20</td><td>2020-05-30</td></tr>
+<tr><td>158</td><td>Erjot</td><td>Olimpios Kerkyra</td><td>Griechenland</td><td>1223</td><td>2022-03-05</td><td>nan</td></tr>
+<tr><td>159</td><td>Cornholio</td><td>IS Östersund</td><td>Schweden</td><td>1221</td><td>2018-02-28</td><td>2021-07-03</td></tr>
+<tr><td>160</td><td>HerrAnton</td><td>Krayer Kumpels</td><td>Deutschland</td><td>1214</td><td>2022-03-14</td><td>nan</td></tr>
+<tr><td>161</td><td>Melik</td><td>FV Budapest</td><td>Ungarn</td><td>1209</td><td>2018-06-13</td><td>2021-10-04</td></tr>
+<tr><td>162</td><td>VfL 1899</td><td>Københavner FK</td><td>Dänemark</td><td>1197</td><td>2018-03-02</td><td>2021-06-11</td></tr>
+<tr><td>163</td><td>JOHAN NITER</td><td>FK Cham</td><td>Schweiz</td><td>1197</td><td>2019-05-12</td><td>2022-08-21</td></tr>
+<tr><td>164</td><td>JT Pesch</td><td>Wésłav Kraków</td><td>Polen</td><td>1184</td><td>2017-05-26</td><td>2020-08-22</td></tr>
+<tr><td>165</td><td>torechto</td><td>HSC Hamburg</td><td>Deutschland</td><td>1181</td><td>2017-01-27</td><td>2020-04-22</td></tr>
+<tr><td>166</td><td>Jannek</td><td>Manchester Town</td><td>England</td><td>1181</td><td>2019-02-13</td><td>2022-05-09</td></tr>
+<tr><td>167</td><td>Wiliwit</td><td>Preußen Schweinfurt</td><td>Deutschland</td><td>1178</td><td>2019-05-31</td><td>2022-08-21</td></tr>
+<tr><td>168</td><td>Bodo 2002</td><td>Lippstadter FC</td><td>Deutschland</td><td>1172</td><td>2022-04-25</td><td>nan</td></tr>
+<tr><td>169</td><td>Sauerländer</td><td>Leeds Athletic</td><td>England</td><td>1167</td><td>2017-07-05</td><td>2020-09-14</td></tr>
+<tr><td>170</td><td>MicBo</td><td>Manchester Devils</td><td>England</td><td>1158</td><td>2022-05-09</td><td>nan</td></tr>
+<tr><td>171</td><td>schwanef2out</td><td>TuS Darmstadt</td><td>Deutschland</td><td>1151</td><td>2018-04-11</td><td>2021-06-05</td></tr>
+<tr><td>172</td><td>MauriceK</td><td>FAC Wolfsberg</td><td>Österreich</td><td>1148</td><td>2022-05-19</td><td>nan</td></tr>
+<tr><td>173</td><td>CobraKha</td><td>SV Porta Trier</td><td>Deutschland</td><td>1142</td><td>2019-08-14</td><td>2022-09-29</td></tr>
+<tr><td>174</td><td>Tiga84</td><td>Fortuna Dudelange</td><td>Luxemburg</td><td>1141</td><td>2019-07-07</td><td>2022-08-21</td></tr>
+<tr><td>175</td><td>Thomas Dirk Meyer</td><td>Alemannia Marl-Hüls</td><td>Deutschland</td><td>1139</td><td>2018-06-01</td><td>2021-07-14</td></tr>
+<tr><td>176</td><td>Frank Schumacher </td><td>Lokhtar Donezk</td><td>Ukraine</td><td>1129</td><td>2019-05-16</td><td>2022-06-18</td></tr>
+<tr><td>177</td><td>Schlucki</td><td>SC Dachau</td><td>Deutschland</td><td>1120</td><td>2022-06-16</td><td>nan</td></tr>
+<tr><td>178</td><td>Pelle</td><td>Kesımboşaspar FK</td><td>Türkei</td><td>1110</td><td>2017-07-22</td><td>2020-08-05</td></tr>
+<tr><td>179</td><td>Bowser</td><td>1.FK Hannover </td><td>Deutschland</td><td>1108</td><td>2017-07-05</td><td>2020-07-17</td></tr>
+<tr><td>180</td><td>FatZ1919</td><td>Royal Madrid</td><td>Spanien</td><td>1104</td><td>2017-01-29</td><td>2020-02-07</td></tr>
+<tr><td>181</td><td>Rando Hasard</td><td>Wallis Sion 08</td><td>Schweiz</td><td>1103</td><td>2019-09-30</td><td>2022-10-07</td></tr>
+<tr><td>182</td><td>Stissel</td><td>Intra Mailand</td><td>Italien</td><td>1089</td><td>2017-01-30</td><td>2020-01-24</td></tr>
+<tr><td>183</td><td>JayJayzen </td><td>BSV Auerbach</td><td>Deutschland</td><td>1082</td><td>2017-04-17</td><td>2020-04-03</td></tr>
+<tr><td>184</td><td>Mr Trost</td><td>FV Austrien Salzburg</td><td>Österreich</td><td>1080</td><td>2019-09-12</td><td>2022-08-27</td></tr>
+<tr><td>185</td><td>DrGernot</td><td>CP London Eagles</td><td>England</td><td>1077</td><td>2019-09-09</td><td>2022-08-21</td></tr>
+<tr><td>186</td><td>Zupp</td><td>GKS Szczecin</td><td>Polen</td><td>1075</td><td>2019-09-11</td><td>2022-08-21</td></tr>
+<tr><td>187</td><td>Cem72</td><td>FV Venlo 02</td><td>Niederlande</td><td>1074</td><td>2021-05-29</td><td>2024-05-07</td></tr>
+<tr><td>188</td><td>Mr. Ancelotti </td><td>Herakles Verona</td><td>Italien</td><td>1061</td><td>2018-06-11</td><td>2021-05-07</td></tr>
+<tr><td>189</td><td>10er</td><td>Forrest Bradford</td><td>England</td><td>1059</td><td>2017-09-04</td><td>2020-07-29</td></tr>
+<tr><td>190</td><td>Zetto</td><td>Graaf Doetinchem</td><td>Niederlande</td><td>1059</td><td>2019-05-07</td><td>2022-03-31</td></tr>
+<tr><td>191</td><td>Sven Arlt</td><td>SC Torpedo Dresden</td><td>Deutschland</td><td>1057</td><td>2018-09-07</td><td>2021-07-30</td></tr>
+<tr><td>192</td><td>spooky75</td><td>US Mallorca</td><td>Spanien</td><td>1056</td><td>2018-07-08</td><td>2021-05-29</td></tr>
+<tr><td>193</td><td>Chill</td><td>IFK Stømsgudsot</td><td>Norwegen</td><td>1055</td><td>2019-05-05</td><td>2022-03-25</td></tr>
+<tr><td>194</td><td>Jan Hörn</td><td>SW Bocholt</td><td>Deutschland</td><td>1054</td><td>2022-08-21</td><td>nan</td></tr>
+<tr><td>195</td><td>KingSchmitzA</td><td>Teutonia Alfter</td><td>Deutschland</td><td>1052</td><td>2019-12-18</td><td>2022-11-04</td></tr>
+<tr><td>196</td><td>Toto</td><td>UD Barakaldo</td><td>Spanien</td><td>1050</td><td>2017-09-12</td><td>2020-07-28</td></tr>
+<tr><td>197</td><td>Vino</td><td>SSC Altach</td><td>Österreich</td><td>1046</td><td>2017-02-13</td><td>2019-12-26</td></tr>
+<tr><td>198</td><td>Nobby2911</td><td>SD Amorebieta</td><td>Spanien</td><td>1046</td><td>2017-09-28</td><td>2020-08-09</td></tr>
+<tr><td>199</td><td>Hanseee</td><td>Madeíro Funchal</td><td>Portugal</td><td>1046</td><td>2019-10-04</td><td>2022-08-15</td></tr>
+<tr><td>200</td><td>F2P Icke27 </td><td>Brighton Seagulls</td><td>England</td><td>1046</td><td>2022-08-29</td><td>nan</td></tr>
+<tr><td>201</td><td>Melik</td><td>CD León</td><td>Spanien</td><td>1044</td><td>2021-10-05</td><td>2024-08-14</td></tr>
+<tr><td>202</td><td>squirrel</td><td>SAK Akureyri</td><td>Island</td><td>1042</td><td>2022-09-02</td><td>nan</td></tr>
+<tr><td>203</td><td>The Fox</td><td>Borussia Fürth</td><td>Deutschland</td><td>1029</td><td>2020-03-15</td><td>2023-01-08</td></tr>
+<tr><td>204</td><td>DeCoZe </td><td>Blau-Schwarz Mannheim</td><td>Deutschland</td><td>1022</td><td>2017-07-10</td><td>2020-04-27</td></tr>
+<tr><td>205</td><td>Fliegenheinz</td><td>Inter Senica</td><td>Slowakei</td><td>1022</td><td>2018-08-16</td><td>2021-06-03</td></tr>
+<tr><td>206</td><td>Max Heberl</td><td>FC Aalborg</td><td>Dänemark</td><td>1021</td><td>2018-09-05</td><td>2021-06-22</td></tr>
+<tr><td>207</td><td>Ebbsen</td><td>Fiskeri Esbjerg</td><td>Dänemark</td><td>1020</td><td>2018-04-12</td><td>2021-01-26</td></tr>
+<tr><td>208</td><td>Biervampir </td><td>NFV Meppen</td><td>Deutschland</td><td>1018</td><td>2019-06-10</td><td>2022-03-24</td></tr>
+<tr><td>209</td><td>Berni Blindman</td><td>Ciltic Glasgow</td><td>Schottland</td><td>1010</td><td>2020-11-15</td><td>2023-08-22</td></tr>
+<tr><td>210</td><td>ProfSemmel</td><td>SSC Oldenburg</td><td>Deutschland</td><td>1009</td><td>2022-10-05</td><td>nan</td></tr>
+<tr><td>211</td><td>DominatorDM</td><td>AC Cagliari</td><td>Italien</td><td>1008</td><td>2017-10-15</td><td>2020-07-19</td></tr>
+<tr><td>212</td><td>Belle</td><td>Royal Tilburg</td><td>Niederlande</td><td>1006</td><td>2017-07-08</td><td>2020-04-09</td></tr>
+<tr><td>213</td><td>Rando Hasard</td><td>Blackpool Sea</td><td>England</td><td>1006</td><td>2022-10-08</td><td>nan</td></tr>
+<tr><td>214</td><td>Bowerche </td><td>FC Anker Perm</td><td>Russland</td><td>1002</td><td>2019-02-11</td><td>2021-11-09</td></tr>
+<tr><td>215</td><td>MauriceKr</td><td>FAC Wolfsberg</td><td>Österreich</td><td>1002</td><td>2019-08-03</td><td>2022-05-01</td></tr>
+<tr><td>216</td><td>TikiTaka</td><td>Draak Hertogenbosch</td><td>Niederlande</td><td>1000</td><td>2017-09-07</td><td>2020-06-03</td></tr>
+<tr><td>217</td><td>Bär</td><td>Śląskie Bielsko-Biała</td><td>Polen</td><td>998</td><td>2017-06-08</td><td>2020-03-02</td></tr>
+<tr><td>218</td><td>Veterano</td><td>Viktoria Sittard</td><td>Niederlande</td><td>997</td><td>2017-09-24</td><td>2020-06-17</td></tr>
+<tr><td>219</td><td>Oliver 1</td><td>Inter Eichstätt</td><td>Deutschland</td><td>995</td><td>2017-11-17</td><td>2020-08-08</td></tr>
+<tr><td>220</td><td>Amatory </td><td>Burton United</td><td>England</td><td>990</td><td>2017-07-03</td><td>2020-03-19</td></tr>
+<tr><td>221</td><td>Exoleati</td><td>Manchester Devils</td><td>England</td><td>989</td><td>2017-07-24</td><td>2020-04-08</td></tr>
+<tr><td>222</td><td>Sternburg</td><td>Motherwell Soccers</td><td>Schottland</td><td>982</td><td>2018-11-23</td><td>2021-08-01</td></tr>
+<tr><td>223</td><td>Levyun</td><td>Preston City</td><td>England</td><td>979</td><td>2017-01-07</td><td>2019-09-13</td></tr>
+<tr><td>224</td><td>KingSchmitzA</td><td>Wimbledon Soccer</td><td>England</td><td>978</td><td>2022-11-05</td><td>nan</td></tr>
+<tr><td>225</td><td>ManneS</td><td>Stuttgarter Schützen</td><td>Deutschland</td><td>976</td><td>2018-04-24</td><td>2020-12-25</td></tr>
+<tr><td>226</td><td>Pelle</td><td>BFV München</td><td>Deutschland</td><td>976</td><td>2020-10-23</td><td>2023-06-26</td></tr>
+<tr><td>227</td><td>StefanoInferno</td><td>FK Aberdeen 1904</td><td>Schottland</td><td>975</td><td>2022-11-08</td><td>nan</td></tr>
+<tr><td>228</td><td>POWERpaul</td><td>Gaz Pskov</td><td>Russland</td><td>968</td><td>2022-11-15</td><td>nan</td></tr>
+<tr><td>229</td><td>Christoph.B.</td><td>Concorde Colmar</td><td>Frankreich</td><td>967</td><td>2019-09-18</td><td>2022-05-12</td></tr>
+<tr><td>230</td><td>Berni Blindman</td><td>BK Rusenborg</td><td>Norwegen</td><td>955</td><td>2018-04-04</td><td>2020-11-14</td></tr>
+<tr><td>231</td><td>Dr. Jones</td><td>Derry United</td><td>Irland</td><td>944</td><td>2018-02-10</td><td>2020-09-11</td></tr>
+<tr><td>232</td><td>Frank Schumacher </td><td>CV Milan</td><td>Italien</td><td>944</td><td>2022-12-09</td><td>nan</td></tr>
+<tr><td>233</td><td>Kaiser Oli</td><td>TSG Aschaffenburg 04</td><td>Deutschland</td><td>943</td><td>2020-06-23</td><td>2023-01-22</td></tr>
+<tr><td>234</td><td>Tasmania1900</td><td>FS Serravalle</td><td>San Marino</td><td>941</td><td>2020-09-28</td><td>2023-04-27</td></tr>
+<tr><td>235</td><td>Cassiooo</td><td>FV Sevilla</td><td>Spanien</td><td>927</td><td>2022-06-03</td><td>2024-12-16</td></tr>
+<tr><td>236</td><td>DeadEye</td><td>RFC Monaco</td><td>Frankreich</td><td>924</td><td>2017-02-06</td><td>2019-08-19</td></tr>
+<tr><td>237</td><td>Eistee</td><td>Tapfer Burghausen</td><td>Deutschland</td><td>924</td><td>2017-09-21</td><td>2020-04-02</td></tr>
+<tr><td>238</td><td>Samuel Punk</td><td>UD Espania Barcelona</td><td>Spanien</td><td>918</td><td>2018-05-26</td><td>2020-11-29</td></tr>
+<tr><td>239</td><td>JayJayzen </td><td>IFK Malmö</td><td>Schweden</td><td>907</td><td>2020-04-04</td><td>2022-09-28</td></tr>
+<tr><td>240</td><td>Wolf von Muldental</td><td>Sporting St. Truiden</td><td>Belgien</td><td>904</td><td>2021-12-09</td><td>2024-05-31</td></tr>
+<tr><td>241</td><td>alchimedes</td><td>Fortuna Heidenheim</td><td>Deutschland</td><td>901</td><td>2017-06-04</td><td>2019-11-22</td></tr>
+<tr><td>242</td><td>John Sausage </td><td>Bolton Nomads</td><td>England</td><td>894</td><td>2017-11-28</td><td>2020-05-10</td></tr>
+<tr><td>243</td><td>Krkrjrj4j</td><td>TSV Amberg 1985</td><td>Deutschland</td><td>890</td><td>2017-09-02</td><td>2020-02-09</td></tr>
+<tr><td>244</td><td>PJay90</td><td>Victoria Hartlepool</td><td>England</td><td>889</td><td>2017-04-15</td><td>2019-09-21</td></tr>
+<tr><td>245</td><td>Op79</td><td>Dundalk Soccer</td><td>Irland</td><td>883</td><td>2017-01-18</td><td>2019-06-20</td></tr>
+<tr><td>246</td><td>Micoud</td><td>HSC Hamburg</td><td>Deutschland</td><td>881</td><td>2023-02-10</td><td>nan</td></tr>
+<tr><td>247</td><td>Micha II</td><td>Maidenhead Doves</td><td>England</td><td>880</td><td>2017-01-22</td><td>2019-06-21</td></tr>
+<tr><td>248</td><td>Bernd Grabosch</td><td>Jahn Wiedenbrück</td><td>Deutschland</td><td>880</td><td>2018-02-15</td><td>2020-07-14</td></tr>
+<tr><td>249</td><td>Priepert</td><td>SC Torpedo Dresden</td><td>Deutschland</td><td>880</td><td>2023-02-11</td><td>nan</td></tr>
+<tr><td>250</td><td>Julian Pazh</td><td>1. FK Bockenheim</td><td>Deutschland</td><td>879</td><td>2018-01-08</td><td>2020-06-05</td></tr>
+<tr><td>251</td><td>Die Blitzer</td><td>CS Villareal</td><td>Spanien</td><td>877</td><td>2017-02-09</td><td>2019-07-06</td></tr>
+<tr><td>252</td><td>MSV Mirow </td><td>SV Intra Leipzig</td><td>Deutschland</td><td>871</td><td>2020-04-02</td><td>2022-08-21</td></tr>
+<tr><td>253</td><td>Wilke</td><td>TuS Nordhausen</td><td>Deutschland</td><td>867</td><td>2020-04-06</td><td>2022-08-21</td></tr>
+<tr><td>254</td><td>Pike</td><td>Sheffield Oils</td><td>England</td><td>865</td><td>2017-08-25</td><td>2020-01-07</td></tr>
+<tr><td>255</td><td>Hustl</td><td>Holstein Steinburg</td><td>Deutschland</td><td>863</td><td>2020-09-02</td><td>2023-01-13</td></tr>
+<tr><td>256</td><td>Wolf von Muldental</td><td>Wattenscheider Kickers</td><td>Deutschland</td><td>862</td><td>2019-07-30</td><td>2021-12-08</td></tr>
+<tr><td>257</td><td>Chussi</td><td>Xäver Länkärän</td><td>Aserbaidschan</td><td>860</td><td>2018-03-31</td><td>2020-08-07</td></tr>
+<tr><td>258</td><td>Stone Alone</td><td>Virginia Turin</td><td>Italien</td><td>850</td><td>2017-09-29</td><td>2020-01-27</td></tr>
+<tr><td>259</td><td>Volker Rachow</td><td>Lukumotiva Moskva</td><td>Russland</td><td>846</td><td>2021-02-10</td><td>2023-06-06</td></tr>
+<tr><td>260</td><td>Shonsky65</td><td>Stalybridge Workers</td><td>England</td><td>842</td><td>2017-09-01</td><td>2019-12-22</td></tr>
+<tr><td>261</td><td>MichaBS</td><td>IFF Sterbæk</td><td>Norwegen</td><td>838</td><td>2020-01-10</td><td>2022-04-27</td></tr>
+<tr><td>262</td><td>Chris J</td><td>KFV Rijeka</td><td>Kroatien</td><td>837</td><td>2017-05-21</td><td>2019-09-05</td></tr>
+<tr><td>263</td><td>Dr.Hammer</td><td>HSV Frankfurt</td><td>Deutschland</td><td>835</td><td>2020-02-17</td><td>2022-06-01</td></tr>
+<tr><td>264</td><td>schwanef2out</td><td>BFC Freiburg</td><td>Deutschland</td><td>835</td><td>2021-06-06</td><td>2023-09-19</td></tr>
+<tr><td>265</td><td>Micha II</td><td>Telford Midland</td><td>England</td><td>835</td><td>2022-02-14</td><td>2024-05-29</td></tr>
+<tr><td>266</td><td>Calli_31</td><td>FV Valencia</td><td>Spanien</td><td>832</td><td>2017-11-09</td><td>2020-02-19</td></tr>
+<tr><td>267</td><td>Moritz1990</td><td>FN Rotterdam</td><td>Niederlande</td><td>831</td><td>2019-05-13</td><td>2021-08-21</td></tr>
+<tr><td>268</td><td>Kairic</td><td>Uerdinger FSK</td><td>Deutschland</td><td>828</td><td>2017-06-03</td><td>2019-09-09</td></tr>
+<tr><td>269</td><td>Kimmi</td><td>Tvøroyri BF</td><td>Färöer</td><td>826</td><td>2020-01-13</td><td>2022-04-18</td></tr>
+<tr><td>270</td><td>Jerry</td><td>SSK Lankowitz</td><td>Österreich</td><td>826</td><td>2020-03-23</td><td>2022-06-27</td></tr>
+<tr><td>271</td><td>MrZer0</td><td>AC Sportivo Madrid</td><td>Spanien</td><td>822</td><td>2017-01-31</td><td>2019-05-03</td></tr>
+<tr><td>272</td><td>HansDampf</td><td>SSC Montpellier</td><td>Frankreich</td><td>822</td><td>2020-12-06</td><td>2023-03-08</td></tr>
+<tr><td>273</td><td>Holli</td><td>Union Drochtersen</td><td>Deutschland</td><td>821</td><td>2021-11-01</td><td>2024-01-31</td></tr>
+<tr><td>274</td><td>SPEET</td><td>BSC Grohn</td><td>Deutschland</td><td>819</td><td>2019-06-10</td><td>2021-09-06</td></tr>
+<tr><td>275</td><td>Chaiypat</td><td>NN Tromsø</td><td>Norwegen</td><td>819</td><td>2020-07-01</td><td>2022-09-28</td></tr>
+<tr><td>276</td><td>Biedel </td><td>RCD Numancia</td><td>Spanien</td><td>818</td><td>2017-05-21</td><td>2019-08-17</td></tr>
+<tr><td>277</td><td>Outcast88</td><td>AC Palermo </td><td>Italien</td><td>818</td><td>2021-07-15</td><td>2023-10-11</td></tr>
+<tr><td>278</td><td>Rodgauer</td><td>TKF 1915 Šamorín</td><td>Slowakei</td><td>816</td><td>2019-10-07</td><td>2021-12-31</td></tr>
+<tr><td>279</td><td>Abyrgur</td><td>KF Haldenkvìk</td><td>Norwegen</td><td>816</td><td>2020-07-01</td><td>2022-09-25</td></tr>
+<tr><td>280</td><td>MicBo</td><td>Birmingham Villans</td><td>England</td><td>813</td><td>2020-02-15</td><td>2022-05-08</td></tr>
+<tr><td>281</td><td>Doug80</td><td>Augsburger SV</td><td>Deutschland</td><td>812</td><td>2017-10-25</td><td>2020-01-15</td></tr>
+<tr><td>282</td><td>Ragrin</td><td>Concorde Colmar</td><td>Frankreich</td><td>808</td><td>2017-06-29</td><td>2019-09-15</td></tr>
+<tr><td>283</td><td>1981richi</td><td>Baschko Ufa</td><td>Russland</td><td>808</td><td>2018-03-26</td><td>2020-06-11</td></tr>
+<tr><td>284</td><td>Sir Marcus of H96</td><td>1.FK Hannover </td><td>Deutschland</td><td>807</td><td>2020-07-20</td><td>2022-10-05</td></tr>
+<tr><td>285</td><td>Matt12</td><td>KF Göteborg</td><td>Schweden</td><td>804</td><td>2019-03-18</td><td>2021-05-30</td></tr>
+<tr><td>286</td><td>Fritsdan34</td><td>DFC Fortuna Berlin</td><td>Deutschland</td><td>804</td><td>2023-04-28</td><td>nan</td></tr>
+<tr><td>287</td><td>Spieze</td><td>SC St. Southampton</td><td>England</td><td>803</td><td>2017-04-12</td><td>2019-06-24</td></tr>
+<tr><td>288</td><td>Ohneworte76</td><td>SSC Halle</td><td>Deutschland</td><td>803</td><td>2023-04-29</td><td>nan</td></tr>
+<tr><td>289</td><td>timo30</td><td>FV Vic Plzeň</td><td>Tschechien</td><td>796</td><td>2023-01-06</td><td>2025-03-12</td></tr>
+<tr><td>290</td><td>Trabatoni </td><td>1. FC Neckarelz</td><td>Deutschland</td><td>795</td><td>2017-12-19</td><td>2020-02-22</td></tr>
+<tr><td>291</td><td>Rodgauer</td><td>TKF 1915 Šamorín</td><td>Slowakei</td><td>795</td><td>2022-01-24</td><td>2024-03-29</td></tr>
+<tr><td>292</td><td>Mr. Ancelotti </td><td>SC St. Southampton</td><td>England</td><td>791</td><td>2021-05-08</td><td>2023-07-08</td></tr>
+<tr><td>293</td><td>BFCDYNAMO1966 </td><td>Dynamit Berlin CF</td><td>Deutschland</td><td>790</td><td>2019-09-27</td><td>2021-11-25</td></tr>
+<tr><td>294</td><td>Brolli75</td><td>FV Schalke 1905</td><td>Deutschland</td><td>787</td><td>2023-05-15</td><td>nan</td></tr>
+<tr><td>295</td><td>Jonas99</td><td>Slavia Domžale</td><td>Slowenien</td><td>786</td><td>2017-07-16</td><td>2019-09-10</td></tr>
+<tr><td>296</td><td>Peetyplatsch</td><td>Inverness City</td><td>Schottland</td><td>786</td><td>2022-10-31</td><td>2024-12-25</td></tr>
+<tr><td>297</td><td>Martinwdd</td><td>Cork United</td><td>Irland</td><td>780</td><td>2017-09-01</td><td>2019-10-21</td></tr>
+<tr><td>298</td><td>Thomas81</td><td>Kayserikulübü</td><td>Türkei</td><td>780</td><td>2022-03-21</td><td>2024-05-09</td></tr>
+<tr><td>299</td><td>Juritora</td><td>WFV Ennepetal</td><td>Deutschland</td><td>779</td><td>2022-12-17</td><td>2025-02-03</td></tr>
+<tr><td>300</td><td>M Bolle</td><td>Union Neubrandenburg</td><td>Deutschland</td><td>778</td><td>2020-05-10</td><td>2022-06-27</td></tr>
+<tr><td>301</td><td>Tal-Löwe</td><td>1. FC Karlsruhe</td><td>Deutschland</td><td>773</td><td>2021-11-07</td><td>2023-12-20</td></tr>
+<tr><td>302</td><td>Heavey</td><td>SC Orel Kranj</td><td>Slowenien</td><td>767</td><td>2023-06-04</td><td>nan</td></tr>
+<tr><td>303</td><td>Deus1989</td><td>CF Croix</td><td>Frankreich</td><td>765</td><td>2017-08-28</td><td>2019-10-02</td></tr>
+<tr><td>304</td><td>Waschbär</td><td>FV Sevilla</td><td>Spanien</td><td>764</td><td>2017-05-17</td><td>2019-06-20</td></tr>
+<tr><td>305</td><td>Lordy</td><td>Northampton Cobs</td><td>England</td><td>764</td><td>2017-05-22</td><td>2019-06-25</td></tr>
+<tr><td>306</td><td>Volker Rachow</td><td>FV Valencia</td><td>Spanien</td><td>764</td><td>2023-06-07</td><td>nan</td></tr>
+<tr><td>307</td><td>Tendzin Selassie</td><td>Doncaster Knights</td><td>England</td><td>760</td><td>2019-10-31</td><td>2021-11-29</td></tr>
+<tr><td>308</td><td>Si'irtu</td><td>Tvøroyri BF</td><td>Färöer</td><td>758</td><td>2023-06-13</td><td>nan</td></tr>
+<tr><td>309</td><td>Chucks78@t-online.de</td><td>Rot-Weiß Regensburg</td><td>Deutschland</td><td>755</td><td>2021-05-09</td><td>2023-06-03</td></tr>
+<tr><td>310</td><td>El Gandhi</td><td>Garonne Bordeaux</td><td>Frankreich</td><td>755</td><td>2022-06-25</td><td>2024-07-19</td></tr>
+<tr><td>311</td><td>Tyra84</td><td>AS Boulonnais</td><td>Frankreich</td><td>754</td><td>2017-11-01</td><td>2019-11-25</td></tr>
+<tr><td>312</td><td>Norbog</td><td>SSV Hoffenheim</td><td>Deutschland</td><td>753</td><td>2023-06-18</td><td>nan</td></tr>
+<tr><td>313</td><td>Rixas</td><td>Union Unterhaching</td><td>Deutschland</td><td>752</td><td>2017-09-03</td><td>2019-09-25</td></tr>
+<tr><td>314</td><td>Willi Wutz</td><td>East Ham London</td><td>England</td><td>752</td><td>2019-04-27</td><td>2021-05-18</td></tr>
+<tr><td>315</td><td>König Matze</td><td>Eltersdorfer SV</td><td>Deutschland</td><td>752</td><td>2023-06-19</td><td>nan</td></tr>
+<tr><td>316</td><td>SKReyem</td><td>Borussia Rehden</td><td>Deutschland</td><td>751</td><td>2019-06-24</td><td>2021-07-14</td></tr>
+<tr><td>317</td><td>Notlösung</td><td>Blau-Schwarz Mannheim</td><td>Deutschland</td><td>746</td><td>2020-04-30</td><td>2022-05-16</td></tr>
+<tr><td>318</td><td>Uwe69</td><td>SCF Cowdenbeath</td><td>Schottland</td><td>741</td><td>2017-09-01</td><td>2019-09-12</td></tr>
+<tr><td>319</td><td>Trebron</td><td>FV Schalke 1905</td><td>Deutschland</td><td>741</td><td>2021-05-01</td><td>2023-05-12</td></tr>
+<tr><td>320</td><td>Omi Nös</td><td>IFK Stømsgudsot</td><td>Norwegen</td><td>740</td><td>2017-01-06</td><td>2019-01-16</td></tr>
+<tr><td>321</td><td>Ponte82</td><td>Mało Kraków</td><td>Polen</td><td>739</td><td>2021-01-23</td><td>2023-02-01</td></tr>
+<tr><td>322</td><td>Tobi Albert</td><td>Teplice CF</td><td>Tschechien</td><td>738</td><td>2019-04-12</td><td>2021-04-19</td></tr>
+<tr><td>323</td><td>Matsinger</td><td>CS Lanzarote</td><td>Spanien</td><td>736</td><td>2018-08-26</td><td>2020-08-31</td></tr>
+<tr><td>324</td><td>Seewolf</td><td>Başektaş Istanbul</td><td>Türkei</td><td>734</td><td>2017-09-27</td><td>2019-10-01</td></tr>
+<tr><td>325</td><td>Zen </td><td>Tähti Tampere</td><td>Finnland</td><td>731</td><td>2017-09-09</td><td>2019-09-10</td></tr>
+<tr><td>326</td><td>Jose Ferinho</td><td>Walsall City</td><td>England</td><td>731</td><td>2019-02-26</td><td>2021-02-26</td></tr>
+<tr><td>327</td><td>McCrey</td><td>Glasgow Randers</td><td>Schottland</td><td>730</td><td>2017-07-16</td><td>2019-07-16</td></tr>
+<tr><td>328</td><td>RonnyRolex</td><td>Union Unterhaching</td><td>Deutschland</td><td>730</td><td>2020-11-07</td><td>2022-11-07</td></tr>
+<tr><td>329</td><td>Williwuerzig</td><td>Þráttótur Reykjavík</td><td>Island</td><td>729</td><td>2022-06-20</td><td>2024-06-18</td></tr>
+<tr><td>330</td><td>Juefione35</td><td>KFV Rijeka</td><td>Kroatien</td><td>726</td><td>2019-11-23</td><td>2021-11-18</td></tr>
+<tr><td>331</td><td>Hans Wurscht</td><td>FKS Liefering</td><td>Österreich</td><td>724</td><td>2020-04-22</td><td>2022-04-16</td></tr>
+<tr><td>332</td><td>D. Meister</td><td>Arbroath Soccer</td><td>Schottland</td><td>723</td><td>2018-05-17</td><td>2020-05-09</td></tr>
+<tr><td>333</td><td>Matze0403</td><td>ASS Frascati Rom</td><td>Italien</td><td>723</td><td>2020-04-26</td><td>2022-04-19</td></tr>
+<tr><td>334</td><td>Uwe69</td><td>Fótbolti Fjarðabyggð</td><td>Island</td><td>723</td><td>2022-09-29</td><td>2024-09-21</td></tr>
+<tr><td>335</td><td>B-Side</td><td>Racing SC Liège</td><td>Belgien</td><td>722</td><td>2019-02-22</td><td>2021-02-13</td></tr>
+<tr><td>336</td><td>slbully</td><td>SKK Illertissen</td><td>Deutschland</td><td>722</td><td>2021-10-25</td><td>2023-10-17</td></tr>
+<tr><td>337</td><td>Kulik</td><td>FSV Stuttgart</td><td>Deutschland</td><td>720</td><td>2021-04-18</td><td>2023-04-08</td></tr>
+<tr><td>338</td><td>Killa1704</td><td>Cork United</td><td>Irland</td><td>719</td><td>2023-07-15</td><td>2025-07-03</td></tr>
+<tr><td>339</td><td>ErkanAlles</td><td>SHFV Todesfelde</td><td>Deutschland</td><td>715</td><td>2017-08-01</td><td>2019-07-17</td></tr>
+<tr><td>340</td><td>ATHENER</td><td>FK Zlín 1920</td><td>Tschechien</td><td>711</td><td>2017-09-06</td><td>2019-08-18</td></tr>
+<tr><td>341</td><td>Uli Löffel</td><td>IS Norrköping</td><td>Schweden</td><td>711</td><td>2019-06-29</td><td>2021-06-09</td></tr>
+<tr><td>342</td><td>Marcelo 6</td><td>Charlton Haddocks</td><td>England</td><td>707</td><td>2020-11-15</td><td>2022-10-23</td></tr>
+<tr><td>343</td><td>Willi Wutz</td><td>Dover County</td><td>England</td><td>705</td><td>2017-05-21</td><td>2019-04-26</td></tr>
+<tr><td>344</td><td>Mr. Chica</td><td>Norwich Soccer</td><td>England</td><td>705</td><td>2023-08-05</td><td>nan</td></tr>
+<tr><td>345</td><td>Justin B.</td><td>Glasgow Randers</td><td>Schottland</td><td>704</td><td>2021-09-07</td><td>2023-08-12</td></tr>
+<tr><td>346</td><td>Topperharley666</td><td>Brócoli Lorca</td><td>Spanien</td><td>703</td><td>2017-09-10</td><td>2019-08-14</td></tr>
+<tr><td>347</td><td>Delikat</td><td>AK Berlin 1917</td><td>Deutschland</td><td>702</td><td>2019-12-01</td><td>2021-11-02</td></tr>
+<tr><td>348</td><td>Superkurti</td><td>PF Orienta Varna</td><td>Bulgarien</td><td>700</td><td>2022-11-30</td><td>2024-10-30</td></tr>
+<tr><td>349</td><td>DonnerLumpi</td><td>Arsenal Mansfield</td><td>England</td><td>698</td><td>2017-12-09</td><td>2019-11-07</td></tr>
+<tr><td>350</td><td>t-benny</td><td>Stal Kharkiv</td><td>Ukraine</td><td>698</td><td>2020-09-22</td><td>2022-08-21</td></tr>
+<tr><td>351</td><td>Zinedine Zidane II</td><td>Záhorie Skalica</td><td>Slowakei</td><td>698</td><td>2021-11-25</td><td>2023-10-24</td></tr>
+<tr><td>352</td><td>DiStefano</td><td>Mało Kraków</td><td>Polen</td><td>698</td><td>2023-02-09</td><td>2025-01-07</td></tr>
+<tr><td>353</td><td>Frische</td><td>STG Sannois Foot</td><td>Frankreich</td><td>697</td><td>2018-10-20</td><td>2020-09-16</td></tr>
+<tr><td>354</td><td>Julian Pietsch </td><td>FC Halle a.d.Saale</td><td>Deutschland</td><td>697</td><td>2020-03-12</td><td>2022-02-07</td></tr>
+<tr><td>355</td><td>Gorrak</td><td>Leyton London</td><td>England</td><td>696</td><td>2017-07-24</td><td>2019-06-20</td></tr>
+<tr><td>356</td><td>Chris82s </td><td>HuFC Düsseldorf</td><td>Deutschland</td><td>694</td><td>2017-02-05</td><td>2018-12-31</td></tr>
+<tr><td>357</td><td>Pajospa</td><td>CP London Eagles</td><td>England</td><td>692</td><td>2023-08-18</td><td>nan</td></tr>
+<tr><td>358</td><td>HerrAnton</td><td>WSV Kristall Wattens</td><td>Österreich</td><td>691</td><td>2020-04-17</td><td>2022-03-09</td></tr>
+<tr><td>359</td><td>Marc_83</td><td>GdL Leipzig</td><td>Deutschland</td><td>690</td><td>2023-08-20</td><td>nan</td></tr>
+<tr><td>360</td><td>Gustav Menge</td><td>Ariana Limassol</td><td>Zypern</td><td>683</td><td>2018-02-08</td><td>2019-12-23</td></tr>
+<tr><td>361</td><td>A.Srugies</td><td>Berlin United</td><td>Deutschland</td><td>682</td><td>2018-11-26</td><td>2020-10-08</td></tr>
+<tr><td>362</td><td>Jens Keller</td><td>FF Sollenau 1905</td><td>Österreich</td><td>682</td><td>2022-11-03</td><td>2024-09-15</td></tr>
+<tr><td>363</td><td>Samsn</td><td>SSV Napoli</td><td>Italien</td><td>681</td><td>2017-02-06</td><td>2018-12-19</td></tr>
+<tr><td>364</td><td>LeoLutz</td><td>FK Leverkusen</td><td>Deutschland</td><td>680</td><td>2017-07-13</td><td>2019-05-24</td></tr>
+<tr><td>365</td><td>Hengo80</td><td>SSV Hoffenheim</td><td>Deutschland</td><td>680</td><td>2021-08-05</td><td>2023-06-16</td></tr>
+<tr><td>366</td><td>Hui bu</td><td>SK Auster Lustenau</td><td>Österreich</td><td>678</td><td>2022-05-02</td><td>2024-03-10</td></tr>
+<tr><td>367</td><td>Der Ungar</td><td>Délkeleti Kispest</td><td>Ungarn</td><td>675</td><td>2019-12-09</td><td>2021-10-14</td></tr>
+<tr><td>368</td><td>1860Lugge</td><td>Elektro Cottbus</td><td>Deutschland</td><td>674</td><td>2018-04-19</td><td>2020-02-22</td></tr>
+<tr><td>369</td><td>Dobrogea</td><td>SD Amorebieta</td><td>Spanien</td><td>672</td><td>2022-09-15</td><td>2024-07-18</td></tr>
+<tr><td>370</td><td>Galavant</td><td>Racing Tenerife</td><td>Spanien</td><td>670</td><td>2017-07-04</td><td>2019-05-05</td></tr>
+<tr><td>371</td><td>Chris2311</td><td>JSV Göttingen 1908</td><td>Deutschland</td><td>670</td><td>2017-10-11</td><td>2019-08-12</td></tr>
+<tr><td>372</td><td>Kairic</td><td>FSV Alm Bielefeld</td><td>Deutschland</td><td>668</td><td>2021-11-10</td><td>2023-09-09</td></tr>
+<tr><td>373</td><td>Luatgartenudo</td><td>Wunstorfer SV</td><td>Deutschland</td><td>668</td><td>2023-09-11</td><td>nan</td></tr>
+<tr><td>374</td><td>Razanauskas</td><td>SH Hammarby</td><td>Schweden</td><td>667</td><td>2017-08-27</td><td>2019-06-25</td></tr>
+<tr><td>375</td><td>SaarKing</td><td>Brechin Town</td><td>Schottland</td><td>667</td><td>2021-07-12</td><td>2023-05-10</td></tr>
+<tr><td>376</td><td>Jordan W</td><td>AC Empoli</td><td>Italien</td><td>667</td><td>2022-03-27</td><td>2024-01-23</td></tr>
+<tr><td>377</td><td>SGEintracht</td><td>FKPG Saalfelden</td><td>Österreich</td><td>666</td><td>2023-09-13</td><td>nan</td></tr>
+<tr><td>378</td><td>Panigale899</td><td>Vík Ólafsvík 1927</td><td>Island</td><td>665</td><td>2017-09-20</td><td>2019-07-17</td></tr>
+<tr><td>379</td><td>Cevapcici13</td><td>LOK Sarajevo</td><td>Bosnien und Herzegowina</td><td>665</td><td>2022-11-25</td><td>2024-09-20</td></tr>
+<tr><td>380</td><td>GuMac</td><td>Ciltic Glasgow</td><td>Schottland</td><td>665</td><td>2023-09-14</td><td>nan</td></tr>
+<tr><td>381</td><td>ErkanAlles</td><td>JSV Göttingen 1908</td><td>Deutschland</td><td>664</td><td>2020-11-08</td><td>2022-09-03</td></tr>
+<tr><td>382</td><td>Rheuma Kai </td><td>QSFC Dumfries</td><td>Schottland</td><td>661</td><td>2017-09-01</td><td>2019-06-24</td></tr>
+<tr><td>383</td><td>waytonex</td><td>Union Schilksee</td><td>Deutschland</td><td>660</td><td>2017-09-16</td><td>2019-07-08</td></tr>
+<tr><td>384</td><td>Wertzzz</td><td>OL Våluronga</td><td>Norwegen</td><td>656</td><td>2017-04-02</td><td>2019-01-18</td></tr>
+<tr><td>385</td><td>Bernd Grabosch</td><td>FCB Aubstadt</td><td>Deutschland</td><td>656</td><td>2020-09-30</td><td>2022-07-18</td></tr>
+<tr><td>386</td><td>senfi4</td><td>Preußen Balingen</td><td>Deutschland</td><td>655</td><td>2017-03-10</td><td>2018-12-25</td></tr>
+<tr><td>387</td><td>Piszczu</td><td>Racing Tenerife</td><td>Spanien</td><td>655</td><td>2020-10-04</td><td>2022-07-21</td></tr>
+<tr><td>388</td><td>KIRSCHNER84 Branne</td><td>Union St. Gallen</td><td>Schweiz</td><td>650</td><td>2018-05-21</td><td>2020-03-01</td></tr>
+<tr><td>389</td><td>Saves78 </td><td>BFC Freiburg</td><td>Deutschland</td><td>649</td><td>2019-03-17</td><td>2020-12-25</td></tr>
+<tr><td>390</td><td>Waldy</td><td>Uerdinger FSK</td><td>Deutschland</td><td>649</td><td>2020-06-11</td><td>2022-03-22</td></tr>
+<tr><td>391</td><td>Occi</td><td>Manchester Town</td><td>England</td><td>648</td><td>2017-05-03</td><td>2019-02-10</td></tr>
+<tr><td>392</td><td>FNUFFIE</td><td>FV Nürnberg 1907</td><td>Deutschland</td><td>646</td><td>2018-01-23</td><td>2019-10-31</td></tr>
+<tr><td>393</td><td>Heavey</td><td>Borussia Wuppertal</td><td>Deutschland</td><td>645</td><td>2021-08-27</td><td>2023-06-03</td></tr>
+<tr><td>394</td><td>Benny B.</td><td>Berlin United</td><td>Deutschland</td><td>644</td><td>2017-02-01</td><td>2018-11-07</td></tr>
+<tr><td>395</td><td>Pakur</td><td>BW Sandhausen</td><td>Deutschland</td><td>644</td><td>2021-08-30</td><td>2023-06-05</td></tr>
+<tr><td>396</td><td>jumping</td><td>Racing Tenerife</td><td>Spanien</td><td>643</td><td>2022-08-03</td><td>2024-05-07</td></tr>
+<tr><td>397</td><td>buttje</td><td>CFC Barcelona</td><td>Spanien</td><td>640</td><td>2019-09-07</td><td>2021-06-08</td></tr>
+<tr><td>398</td><td>Si'irtu</td><td>WSC Ruislip</td><td>England</td><td>640</td><td>2021-09-10</td><td>2023-06-12</td></tr>
+<tr><td>399</td><td>Brolli75</td><td>Kleeblatt Oberhausen</td><td>Deutschland</td><td>639</td><td>2021-08-13</td><td>2023-05-14</td></tr>
+<tr><td>400</td><td>Chaiypat</td><td>Íþróttir Hafnarfjörður</td><td>Island</td><td>639</td><td>2022-09-29</td><td>2024-06-29</td></tr>
+<tr><td>401</td><td>Kof </td><td>Osman Ankara</td><td>Türkei</td><td>637</td><td>2017-11-15</td><td>2019-08-14</td></tr>
+<tr><td>402</td><td>Jay Jay Okocha</td><td>SV Basel</td><td>Schweiz</td><td>637</td><td>2018-07-30</td><td>2020-04-27</td></tr>
+<tr><td>403</td><td>Cash and Go</td><td>Esportivo La Coruña</td><td>Spanien</td><td>636</td><td>2017-05-15</td><td>2019-02-10</td></tr>
+<tr><td>404</td><td>Bean</td><td>SF Getafe</td><td>Spanien</td><td>636</td><td>2017-07-15</td><td>2019-04-12</td></tr>
+<tr><td>405</td><td>J. Neumann</td><td>Holstein Steinburg</td><td>Deutschland</td><td>636</td><td>2018-08-21</td><td>2020-05-18</td></tr>
+<tr><td>406</td><td>HennesVIII.</td><td>SKK Hamburg</td><td>Deutschland</td><td>634</td><td>2018-12-09</td><td>2020-09-03</td></tr>
+<tr><td>407</td><td>Lumpaci</td><td>Cambridge Town</td><td>England</td><td>632</td><td>2017-06-10</td><td>2019-03-04</td></tr>
+<tr><td>408</td><td>Evil_Twin </td><td>SC Fiorentina</td><td>Italien</td><td>631</td><td>2017-06-23</td><td>2019-03-16</td></tr>
+<tr><td>409</td><td>Bucki</td><td>SV Kalsdorf</td><td>Österreich</td><td>631</td><td>2019-09-23</td><td>2021-06-15</td></tr>
+<tr><td>410</td><td>slbully</td><td>FSV Stuttgart</td><td>Deutschland</td><td>631</td><td>2023-10-18</td><td>nan</td></tr>
+<tr><td>411</td><td>Ramon08101980</td><td>Liverpool Reds</td><td>England</td><td>629</td><td>2023-10-20</td><td>nan</td></tr>
+<tr><td>412</td><td>Stephen Toggle</td><td>Thraki Komotini</td><td>Griechenland</td><td>628</td><td>2020-02-25</td><td>2021-11-14</td></tr>
+<tr><td>413</td><td>JayJayzen </td><td>CF Croix</td><td>Frankreich</td><td>628</td><td>2022-09-29</td><td>2024-06-18</td></tr>
+<tr><td>414</td><td>Justin B.</td><td>IF Brand Bergen</td><td>Norwegen</td><td>627</td><td>2018-08-09</td><td>2020-04-27</td></tr>
+<tr><td>415</td><td>Der Ungar</td><td>Red Lions Millwall</td><td>England</td><td>627</td><td>2022-08-13</td><td>2024-05-01</td></tr>
+<tr><td>416</td><td>Micha 63</td><td>Haifa SC</td><td>Israel</td><td>625</td><td>2017-10-07</td><td>2019-06-24</td></tr>
+<tr><td>417</td><td>Hans Wurscht</td><td>FKS Liefering</td><td>Österreich</td><td>623</td><td>2018-06-17</td><td>2020-03-01</td></tr>
+<tr><td>418</td><td>Tricky3006</td><td>AC Empoli</td><td>Italien</td><td>622</td><td>2019-03-17</td><td>2020-11-28</td></tr>
+<tr><td>419</td><td>Double_B84</td><td>Baia Mare CF</td><td>Rumänien</td><td>621</td><td>2019-07-18</td><td>2021-03-30</td></tr>
+<tr><td>420</td><td>J. Neumann</td><td>VIK Helsinki</td><td>Finnland</td><td>621</td><td>2020-05-19</td><td>2022-01-30</td></tr>
+<tr><td>421</td><td>Gumbam</td><td>Blessed St Albans</td><td>England</td><td>618</td><td>2017-08-31</td><td>2019-05-11</td></tr>
+<tr><td>422</td><td>Atte</td><td>ASS Gibraltar</td><td>Gibraltar</td><td>617</td><td>2021-05-10</td><td>2023-01-17</td></tr>
+<tr><td>423</td><td>Trapattoni</td><td>SV Basel</td><td>Schweiz</td><td>614</td><td>2023-11-04</td><td>nan</td></tr>
+<tr><td>424</td><td>Asch999</td><td>FC Peairt 1885</td><td>Schottland</td><td>612</td><td>2019-11-24</td><td>2021-07-28</td></tr>
+<tr><td>425</td><td>Stinger82</td><td>Ballsport Dortmund</td><td>Deutschland</td><td>607</td><td>2017-05-01</td><td>2018-12-29</td></tr>
+<tr><td>426</td><td>Big Poppa Pump</td><td>EXZ Rotterdam</td><td>Niederlande</td><td>606</td><td>2017-10-31</td><td>2019-06-29</td></tr>
+<tr><td>427</td><td>Franky-1893</td><td>Tottenham Rooster</td><td>England</td><td>603</td><td>2017-02-05</td><td>2018-10-01</td></tr>
+<tr><td>428</td><td>Daydreams</td><td>Union Drochtersen</td><td>Deutschland</td><td>602</td><td>2019-03-20</td><td>2020-11-11</td></tr>
+<tr><td>429</td><td>Steve08</td><td>MVV Neustrelitz</td><td>Deutschland</td><td>602</td><td>2019-06-26</td><td>2021-02-17</td></tr>
+<tr><td>430</td><td>RoKa</td><td>FC Shijak</td><td>Albanien</td><td>602</td><td>2020-04-08</td><td>2021-12-01</td></tr>
+<tr><td>431</td><td>Uli Löffel</td><td>CFC Barcelona</td><td>Spanien</td><td>599</td><td>2021-06-10</td><td>2023-01-30</td></tr>
+<tr><td>432</td><td>Unbekannt91</td><td>SF Trabzon 2007</td><td>Türkei</td><td>598</td><td>2017-11-03</td><td>2019-06-24</td></tr>
+<tr><td>433</td><td>J. Neumann</td><td>Rouge Stern Paris</td><td>Frankreich</td><td>598</td><td>2023-03-07</td><td>2024-10-25</td></tr>
+<tr><td>434</td><td>Bartschi</td><td>CFC Barcelona</td><td>Spanien</td><td>597</td><td>2017-12-26</td><td>2019-08-15</td></tr>
+<tr><td>435</td><td>Jimba Lamba</td><td>Burton United</td><td>England</td><td>596</td><td>2023-01-27</td><td>2024-09-14</td></tr>
+<tr><td>436</td><td>Dorian Born</td><td>London Gunners</td><td>England</td><td>595</td><td>2017-03-10</td><td>2018-10-26</td></tr>
+<tr><td>437</td><td>AndiMacht1953</td><td>SSV Frankfurt 1897</td><td>Deutschland</td><td>595</td><td>2018-05-07</td><td>2019-12-23</td></tr>
+<tr><td>438</td><td>Andi1978</td><td>AC Palermo </td><td>Italien</td><td>595</td><td>2018-07-31</td><td>2020-03-17</td></tr>
+<tr><td>439</td><td>Muadib</td><td>Esportivo La Coruña</td><td>Spanien</td><td>595</td><td>2019-02-20</td><td>2020-10-07</td></tr>
+<tr><td>440</td><td>Madt02</td><td>FV Nürnberg 1907</td><td>Deutschland</td><td>595</td><td>2019-12-31</td><td>2021-08-17</td></tr>
+<tr><td>441</td><td>Der Schreckliche </td><td>SH Hammarby</td><td>Schweden</td><td>594</td><td>2019-06-27</td><td>2021-02-10</td></tr>
+<tr><td>442</td><td>Waldy</td><td>RCD Formentera</td><td>Spanien</td><td>592</td><td>2017-07-09</td><td>2019-02-21</td></tr>
+<tr><td>443</td><td>Picanto</td><td>FC Mattersburg 1921</td><td>Österreich</td><td>592</td><td>2023-02-11</td><td>2024-09-25</td></tr>
+<tr><td>444</td><td>Hein Halenbeck</td><td>IFF Örebro</td><td>Schweden</td><td>591</td><td>2017-10-22</td><td>2019-06-05</td></tr>
+<tr><td>445</td><td>Dr.Hammer</td><td>Wehener SC</td><td>Deutschland</td><td>591</td><td>2018-07-05</td><td>2020-02-16</td></tr>
+<tr><td>446</td><td>Fischkopp1981</td><td>Hansa Bremen</td><td>Deutschland</td><td>589</td><td>2017-10-14</td><td>2019-05-26</td></tr>
+<tr><td>447</td><td>Kein</td><td>BFV München</td><td>Deutschland</td><td>589</td><td>2018-01-09</td><td>2019-08-21</td></tr>
+<tr><td>448</td><td>Ladylover</td><td>HSV Frankfurt</td><td>Deutschland</td><td>588</td><td>2018-07-06</td><td>2020-02-14</td></tr>
+<tr><td>449</td><td>Maik</td><td>AC Parma</td><td>Italien</td><td>587</td><td>2017-12-10</td><td>2019-07-20</td></tr>
+<tr><td>450</td><td>Udi </td><td>Fortuna Seelow</td><td>Deutschland</td><td>587</td><td>2019-04-19</td><td>2020-11-26</td></tr>
+<tr><td>451</td><td>Steven135</td><td>KVI Stavanger</td><td>Norwegen</td><td>586</td><td>2018-08-01</td><td>2020-03-09</td></tr>
+<tr><td>452</td><td>Stone Alone</td><td>Dundee FK</td><td>Schottland</td><td>585</td><td>2021-05-11</td><td>2022-12-17</td></tr>
+<tr><td>453</td><td>Ponte82</td><td>Vercelli Calcio</td><td>Italien</td><td>581</td><td>2017-04-17</td><td>2018-11-19</td></tr>
+<tr><td>454</td><td>Suratan</td><td>ASC Dakari</td><td>Lettland</td><td>581</td><td>2020-01-23</td><td>2021-08-26</td></tr>
+<tr><td>455</td><td>Unbekannt91</td><td>Glasgow Randers</td><td>Schottland</td><td>578</td><td>2019-09-26</td><td>2021-04-26</td></tr>
+<tr><td>456</td><td>Sonic82</td><td>SI Hobro</td><td>Dänemark</td><td>577</td><td>2017-08-11</td><td>2019-03-11</td></tr>
+<tr><td>457</td><td>Micha II</td><td>Telford Midland</td><td>England</td><td>577</td><td>2020-06-15</td><td>2022-01-13</td></tr>
+<tr><td>458</td><td>GTO Sitting Bull</td><td>Fáaðfara Reykjavík </td><td>Island</td><td>577</td><td>2022-02-12</td><td>2023-09-12</td></tr>
+<tr><td>459</td><td>Jerry</td><td>SSV Kapfenberg 09</td><td>Österreich</td><td>574</td><td>2022-08-24</td><td>2024-03-20</td></tr>
+<tr><td>460</td><td>Gekko</td><td>Glückauf Köln 1950</td><td>Deutschland</td><td>573</td><td>2021-06-09</td><td>2023-01-03</td></tr>
+<tr><td>461</td><td>Sergey Fährlich</td><td>Garonne Bordeaux</td><td>Frankreich</td><td>572</td><td>2018-06-11</td><td>2020-01-04</td></tr>
+<tr><td>462</td><td>The_Hoff</td><td>Saarbrückener SC</td><td>Deutschland</td><td>571</td><td>2021-11-23</td><td>2023-06-17</td></tr>
+<tr><td>463</td><td>Hauli</td><td>Zehlendorfer SC</td><td>Deutschland</td><td>570</td><td>2017-02-09</td><td>2018-09-02</td></tr>
+<tr><td>464</td><td>Romario78</td><td>FC Roma</td><td>Italien</td><td>570</td><td>2023-12-18</td><td>nan</td></tr>
+<tr><td>465</td><td>Klaus Toppmöller</td><td>AS Cello Verona</td><td>Italien</td><td>568</td><td>2018-05-04</td><td>2019-11-23</td></tr>
+<tr><td>466</td><td>Ebbsen</td><td>FK Fanorbohçe</td><td>Türkei</td><td>568</td><td>2023-12-20</td><td>nan</td></tr>
+<tr><td>467</td><td>goschmrk2</td><td>Olympia Berlin</td><td>Deutschland</td><td>566</td><td>2017-10-16</td><td>2019-05-05</td></tr>
+<tr><td>468</td><td>HansDampf</td><td>Speertak Praha</td><td>Tschechien</td><td>566</td><td>2019-05-19</td><td>2020-12-05</td></tr>
+<tr><td>469</td><td>Benny Lorentz</td><td>ASS Dundee</td><td>Schottland</td><td>565</td><td>2018-06-03</td><td>2019-12-20</td></tr>
+<tr><td>470</td><td>Rebel28</td><td>AS Bourg-P̩ronnas</td><td>Frankreich</td><td>563</td><td>2017-04-18</td><td>2018-11-02</td></tr>
+<tr><td>471</td><td>Leini82</td><td>FV Vic Plzeň</td><td>Tschechien</td><td>562</td><td>2017-05-12</td><td>2018-11-25</td></tr>
+<tr><td>472</td><td>Cem72</td><td>SK Utrecht</td><td>Niederlande</td><td>562</td><td>2018-06-14</td><td>2019-12-28</td></tr>
+<tr><td>473</td><td>Max Heberl</td><td>SC Torpedo Dresden</td><td>Deutschland</td><td>561</td><td>2017-02-20</td><td>2018-09-04</td></tr>
+<tr><td>474</td><td>Chill</td><td>Latium Rom</td><td>Italien</td><td>561</td><td>2017-10-20</td><td>2019-05-04</td></tr>
+<tr><td>475</td><td>Die Blitzer</td><td>Liverpool Reds</td><td>England</td><td>561</td><td>2019-07-07</td><td>2021-01-18</td></tr>
+<tr><td>476</td><td>Tal-Löwe</td><td>HSC Hamburg</td><td>Deutschland</td><td>561</td><td>2020-04-24</td><td>2021-11-06</td></tr>
+<tr><td>477</td><td>Dr.Dave</td><td>ÚJ Budapest FC</td><td>Ungarn</td><td>560</td><td>2017-07-18</td><td>2019-01-29</td></tr>
+<tr><td>478</td><td>chrisse7</td><td>Oranje Emmen</td><td>Niederlande</td><td>559</td><td>2019-12-27</td><td>2021-07-08</td></tr>
+<tr><td>479</td><td>Waldy</td><td>AS Cello Verona</td><td>Italien</td><td>558</td><td>2022-03-23</td><td>2023-10-02</td></tr>
+<tr><td>480</td><td>Daywalker-rbt </td><td>FC Helsingborg</td><td>Schweden</td><td>557</td><td>2017-01-08</td><td>2018-07-19</td></tr>
+<tr><td>481</td><td>El Gandhi</td><td>Sportivo Bilbao</td><td>Spanien</td><td>555</td><td>2019-12-18</td><td>2021-06-25</td></tr>
+<tr><td>482</td><td>Romario78</td><td>FV Vic Plzeň</td><td>Tschechien</td><td>555</td><td>2020-03-19</td><td>2021-09-25</td></tr>
+<tr><td>483</td><td>Jordan W</td><td>KF Dunajská 1905</td><td>Slowakei</td><td>554</td><td>2020-09-18</td><td>2022-03-26</td></tr>
+<tr><td>484</td><td>theDuke</td><td>Walsall City</td><td>England</td><td>553</td><td>2021-06-18</td><td>2022-12-23</td></tr>
+<tr><td>485</td><td>Maxwin</td><td>Københavner FK</td><td>Dänemark</td><td>553</td><td>2022-04-05</td><td>2023-10-10</td></tr>
+<tr><td>486</td><td>Jerry Cotton</td><td>SSV Kapfenberg 09</td><td>Österreich</td><td>552</td><td>2017-07-01</td><td>2019-01-04</td></tr>
+<tr><td>487</td><td>Totti Roma</td><td>AS Boulonnais</td><td>Frankreich</td><td>550</td><td>2019-12-17</td><td>2021-06-19</td></tr>
+<tr><td>488</td><td>Maddin Wagner</td><td>1. FC Karlsruhe</td><td>Deutschland</td><td>549</td><td>2018-06-07</td><td>2019-12-08</td></tr>
+<tr><td>489</td><td>Chris1982</td><td>Garonne Bordeaux</td><td>Frankreich</td><td>549</td><td>2020-11-06</td><td>2022-05-09</td></tr>
+<tr><td>490</td><td>Millski1</td><td>Sportowy Sosnowiec</td><td>Polen</td><td>548</td><td>2018-11-26</td><td>2020-05-27</td></tr>
+<tr><td>491</td><td>Norbog</td><td>Union Zulte Waregem</td><td>Belgien</td><td>548</td><td>2020-08-23</td><td>2022-02-22</td></tr>
+<tr><td>492</td><td>Ernsag</td><td>Københavner FK</td><td>Dänemark</td><td>547</td><td>2023-10-16</td><td>2025-04-15</td></tr>
+<tr><td>493</td><td>skydream.83</td><td>Leipziger SV</td><td>Deutschland</td><td>546</td><td>2022-05-23</td><td>2023-11-20</td></tr>
+<tr><td>494</td><td>Skadi</td><td>Falkirk United</td><td>Schottland</td><td>544</td><td>2017-05-23</td><td>2018-11-18</td></tr>
+<tr><td>495</td><td>GuMac</td><td>Woolfield FC</td><td>Nordirland</td><td>544</td><td>2022-03-18</td><td>2023-09-13</td></tr>
+<tr><td>496</td><td>mtc15</td><td>Brighton Seagulls</td><td>England</td><td>543</td><td>2021-03-01</td><td>2022-08-26</td></tr>
+<tr><td>497</td><td>Mancini</td><td>FKA Wacker Mödling</td><td>Österreich</td><td>542</td><td>2019-10-11</td><td>2021-04-05</td></tr>
+<tr><td>498</td><td>Klaus Toppmöller</td><td>RCD Ejea</td><td>Spanien</td><td>542</td><td>2021-08-08</td><td>2023-02-01</td></tr>
+<tr><td>499</td><td>T. Witte </td><td>Sportivo Alaves</td><td>Spanien</td><td>540</td><td>2017-08-31</td><td>2019-02-22</td></tr>
+<tr><td>500</td><td>Herby</td><td>Manchester Town</td><td>England</td><td>540</td><td>2024-01-17</td><td>nan</td></tr>
+<tr><td>501</td><td>Notlösung</td><td>TSG Aschaffenburg 04</td><td>Deutschland</td><td>539</td><td>2018-11-13</td><td>2020-05-05</td></tr>
+<tr><td>502</td><td>LeoLutz</td><td>Elektro Cottbus</td><td>Deutschland</td><td>538</td><td>2020-02-25</td><td>2021-08-16</td></tr>
+<tr><td>503</td><td>Smiti</td><td>Alliance Bradford</td><td>England</td><td>536</td><td>2019-05-04</td><td>2020-10-21</td></tr>
+<tr><td>504</td><td>BastiMasters</td><td>Esportiu Reus</td><td>Spanien</td><td>534</td><td>2017-03-29</td><td>2018-09-14</td></tr>
+<tr><td>505</td><td>KiiSii</td><td>Zaan Alkmaar</td><td>Niederlande</td><td>534</td><td>2017-06-17</td><td>2018-12-03</td></tr>
+<tr><td>506</td><td>Sidd</td><td>Longford City</td><td>Irland</td><td>534</td><td>2018-03-19</td><td>2019-09-04</td></tr>
+<tr><td>507</td><td>Ric01</td><td>FK Stadtallendorf 1923</td><td>Deutschland</td><td>533</td><td>2018-01-20</td><td>2019-07-07</td></tr>
+<tr><td>508</td><td>Mischa</td><td>RB Fischeln</td><td>Deutschland</td><td>531</td><td>2017-09-01</td><td>2019-02-14</td></tr>
+<tr><td>509</td><td>Dy Pa</td><td>Italia Santarcangelo</td><td>Italien</td><td>530</td><td>2017-06-10</td><td>2018-11-22</td></tr>
+<tr><td>510</td><td>Capitals</td><td>Stal Kharkiv</td><td>Ukraine</td><td>530</td><td>2018-07-11</td><td>2019-12-23</td></tr>
+<tr><td>511</td><td>Bbffgzui</td><td>VfL Steinbach</td><td>Deutschland</td><td>530</td><td>2019-04-06</td><td>2020-09-17</td></tr>
+<tr><td>512</td><td>Schaumal</td><td>ASK Eindhoven</td><td>Niederlande</td><td>528</td><td>2018-04-03</td><td>2019-09-13</td></tr>
+<tr><td>513</td><td>pedroGMF</td><td>FK Storm Graz </td><td>Österreich</td><td>528</td><td>2018-08-31</td><td>2020-02-10</td></tr>
+<tr><td>514</td><td>Double_B84</td><td>Gaza Mediaș</td><td>Rumänien</td><td>527</td><td>2024-01-30</td><td>nan</td></tr>
+<tr><td>515</td><td>LaPaloma</td><td>Unione Terni</td><td>Italien</td><td>525</td><td>2017-04-19</td><td>2018-09-26</td></tr>
+<tr><td>516</td><td>P. Lange</td><td>Sportive Épinal</td><td>Frankreich</td><td>525</td><td>2018-06-13</td><td>2019-11-20</td></tr>
+<tr><td>517</td><td>Holli</td><td>SC Hasselt-Kermt</td><td>Belgien</td><td>525</td><td>2024-02-01</td><td>nan</td></tr>
+<tr><td>518</td><td>Baschen </td><td>BBC Bissingen</td><td>Deutschland</td><td>522</td><td>2023-07-11</td><td>2024-12-14</td></tr>
+<tr><td>519</td><td>Juefione35</td><td>EF Deinze</td><td>Belgien</td><td>520</td><td>2018-02-04</td><td>2019-07-09</td></tr>
+<tr><td>520</td><td>MichaBS</td><td>IFF Sterbæk</td><td>Norwegen</td><td>520</td><td>2018-06-10</td><td>2019-11-12</td></tr>
+<tr><td>521</td><td>Florian Frohsinn</td><td>Virginia Turin</td><td>Italien</td><td>519</td><td>2022-06-01</td><td>2023-11-02</td></tr>
+<tr><td>522</td><td>Howie75</td><td>Atletik Nikosia</td><td>Zypern</td><td>517</td><td>2018-05-06</td><td>2019-10-05</td></tr>
+<tr><td>523</td><td>Albo</td><td>TSV Amberg 1985</td><td>Deutschland</td><td>515</td><td>2022-02-02</td><td>2023-07-02</td></tr>
+<tr><td>524</td><td>Marcel Reuße </td><td>STG Sannois Foot</td><td>Frankreich</td><td>514</td><td>2017-05-21</td><td>2018-10-17</td></tr>
+<tr><td>525</td><td>Dub$tar</td><td>Norwich Soccer</td><td>England</td><td>514</td><td>2017-06-12</td><td>2018-11-08</td></tr>
+<tr><td>526</td><td>Sascha 88</td><td>Union Rosenheim</td><td>Deutschland</td><td>514</td><td>2017-08-16</td><td>2019-01-12</td></tr>
+<tr><td>527</td><td>Günnirinho</td><td>KS Busu Velipojë</td><td>Albanien</td><td>514</td><td>2017-11-10</td><td>2019-04-08</td></tr>
+<tr><td>528</td><td>Mulle</td><td>Woolfield FC</td><td>Nordirland</td><td>513</td><td>2018-03-24</td><td>2019-08-19</td></tr>
+<tr><td>529</td><td>Stylowylo88 </td><td>SSC Bremen 1915</td><td>Deutschland</td><td>513</td><td>2023-08-21</td><td>2025-01-15</td></tr>
+<tr><td>530</td><td>Hugo Sanchez</td><td>FV Trabzonhir</td><td>Türkei</td><td>512</td><td>2017-10-27</td><td>2019-03-23</td></tr>
+<tr><td>531</td><td>Johan Iter</td><td>SSC Mosta</td><td>Malta</td><td>511</td><td>2017-01-14</td><td>2018-06-09</td></tr>
+<tr><td>532</td><td>Hanseee</td><td>SHV Passau</td><td>Deutschland</td><td>511</td><td>2017-12-08</td><td>2019-05-03</td></tr>
+<tr><td>533</td><td>Ebbsen</td><td>FV Valencia</td><td>Spanien</td><td>510</td><td>2021-01-27</td><td>2022-06-21</td></tr>
+<tr><td>534</td><td>Orion</td><td>BK Djurgårdens</td><td>Schweden</td><td>510</td><td>2022-03-15</td><td>2023-08-07</td></tr>
+<tr><td>535</td><td>Bronko0n3so4 </td><td>Schwarz-Weiß Aalen</td><td>Deutschland</td><td>508</td><td>2018-03-14</td><td>2019-08-04</td></tr>
+<tr><td>536</td><td>Servano</td><td>Usk Newport</td><td>England</td><td>507</td><td>2021-09-14</td><td>2023-02-03</td></tr>
+<tr><td>537</td><td>Loui</td><td>Ipswich Boys</td><td>England</td><td>506</td><td>2017-05-21</td><td>2018-10-09</td></tr>
+<tr><td>538</td><td>Hengo80</td><td>Pfalz Weiden</td><td>Deutschland</td><td>506</td><td>2023-06-17</td><td>2024-11-04</td></tr>
+<tr><td>539</td><td>daOddGod</td><td>ISF Ålesund</td><td>Norwegen</td><td>504</td><td>2017-10-06</td><td>2019-02-22</td></tr>
+<tr><td>540</td><td>Basca</td><td>1. FC Karlsruhe</td><td>Deutschland</td><td>500</td><td>2020-01-09</td><td>2021-05-23</td></tr>
+<tr><td>541</td><td>Jacek G</td><td>Väsby Soccer</td><td>Schweden</td><td>500</td><td>2021-04-08</td><td>2022-08-21</td></tr>
+<tr><td>542</td><td>Heerus</td><td>FC Sabur</td><td>Georgien</td><td>500</td><td>2022-12-12</td><td>2024-04-25</td></tr>
+<tr><td>543</td><td>Sir Marcus of H96</td><td>Ipswich Boys</td><td>England</td><td>498</td><td>2018-10-17</td><td>2020-02-27</td></tr>
+<tr><td>544</td><td>Dr. Sommer</td><td>Zaan Alkmaar</td><td>Niederlande</td><td>498</td><td>2019-02-08</td><td>2020-06-20</td></tr>
+<tr><td>545</td><td>Chris1982</td><td>Olimpios Piräus</td><td>Griechenland</td><td>497</td><td>2018-04-04</td><td>2019-08-14</td></tr>
+<tr><td>546</td><td>Justin B.</td><td>FV Porto</td><td>Portugal</td><td>496</td><td>2020-04-28</td><td>2021-09-06</td></tr>
+<tr><td>547</td><td>Laena Sturmkind </td><td>Madeíro Funchal</td><td>Portugal</td><td>496</td><td>2023-09-09</td><td>2025-01-17</td></tr>
+<tr><td>548</td><td>Godgib</td><td>JK Tallinn</td><td>Estland</td><td>495</td><td>2017-08-07</td><td>2018-12-15</td></tr>
+<tr><td>549</td><td>Dynator</td><td>ASS Frascati Rom</td><td>Italien</td><td>495</td><td>2018-06-02</td><td>2019-10-10</td></tr>
+<tr><td>550</td><td>Zett</td><td>Gharabagh Ağdam</td><td>Aserbaidschan</td><td>495</td><td>2018-08-26</td><td>2020-01-03</td></tr>
+<tr><td>551</td><td>Offenabcher</td><td>Olympia Marseille</td><td>Frankreich</td><td>495</td><td>2022-09-29</td><td>2024-02-06</td></tr>
+<tr><td>552</td><td>Ebbe Sand</td><td>SSC Pirmasens</td><td>Deutschland</td><td>494</td><td>2018-02-27</td><td>2019-07-06</td></tr>
+<tr><td>553</td><td>Unbekannt91</td><td>FK Cádiz</td><td>Spanien</td><td>494</td><td>2021-04-27</td><td>2022-09-03</td></tr>
+<tr><td>554</td><td>Valentin Toni </td><td>SK Münchener Löwen</td><td>Deutschland</td><td>492</td><td>2018-01-11</td><td>2019-05-18</td></tr>
+<tr><td>555</td><td>DanSkorski</td><td>FKV Köln</td><td>Deutschland</td><td>492</td><td>2019-01-01</td><td>2020-05-07</td></tr>
+<tr><td>556</td><td>Markus Dahlhaus </td><td>FK Neretva Mostar</td><td>Bosnien und Herzegowina</td><td>490</td><td>2018-02-06</td><td>2019-06-11</td></tr>
+<tr><td>557</td><td>Peppers </td><td>Slagelse SL</td><td>Dänemark</td><td>489</td><td>2019-01-06</td><td>2020-05-09</td></tr>
+<tr><td>558</td><td>Stoner</td><td>Slavia Domžale</td><td>Slowenien</td><td>488</td><td>2020-03-03</td><td>2021-07-04</td></tr>
+<tr><td>559</td><td>Captain Chaos</td><td>Atletico Bergamo</td><td>Italien</td><td>487</td><td>2017-11-11</td><td>2019-03-13</td></tr>
+<tr><td>560</td><td>Kaiser Rocky</td><td>Sonnenhof Schönberg</td><td>Deutschland</td><td>487</td><td>2020-08-20</td><td>2021-12-20</td></tr>
+<tr><td>561</td><td>Micharj</td><td>Baia Mare CF</td><td>Rumänien</td><td>486</td><td>2017-01-17</td><td>2018-05-18</td></tr>
+<tr><td>562</td><td>Erjot</td><td>Virginia Turin</td><td>Italien</td><td>485</td><td>2020-11-04</td><td>2022-03-04</td></tr>
+<tr><td>563</td><td>TDog</td><td>Atletico Bergamo</td><td>Italien</td><td>485</td><td>2021-06-24</td><td>2022-10-22</td></tr>
+<tr><td>564</td><td>Joschua</td><td>Dynamit Zagreb</td><td>Kroatien</td><td>484</td><td>2017-12-28</td><td>2019-04-26</td></tr>
+<tr><td>565</td><td>Raul Dean</td><td>Fortuna Essen</td><td>Deutschland</td><td>483</td><td>2018-07-22</td><td>2019-11-17</td></tr>
+<tr><td>566</td><td>Gurk_Man</td><td>BFC Freiburg</td><td>Deutschland</td><td>482</td><td>2017-07-13</td><td>2018-11-07</td></tr>
+<tr><td>567</td><td>Ernsag</td><td>Inter Senica</td><td>Slowakei</td><td>482</td><td>2022-03-09</td><td>2023-07-04</td></tr>
+<tr><td>568</td><td>BSG Wismut</td><td>Cardinal Woking</td><td>England</td><td>481</td><td>2017-06-19</td><td>2018-10-13</td></tr>
+<tr><td>569</td><td>Jürgen klopp</td><td>Cardiff Dragons</td><td>England</td><td>481</td><td>2020-03-07</td><td>2021-07-01</td></tr>
+<tr><td>570</td><td>Finn04</td><td>Brighton Seagulls</td><td>England</td><td>480</td><td>2018-07-28</td><td>2019-11-20</td></tr>
+<tr><td>571</td><td>ErkanAlles</td><td>FSV Alm Bielefeld</td><td>Deutschland</td><td>478</td><td>2019-07-18</td><td>2020-11-07</td></tr>
+<tr><td>572</td><td>Waschbär</td><td>Aluminium Aachen</td><td>Deutschland</td><td>478</td><td>2021-10-30</td><td>2023-02-20</td></tr>
+<tr><td>573</td><td>TDog</td><td>CFC Barcelona</td><td>Spanien</td><td>477</td><td>2023-03-17</td><td>2024-07-06</td></tr>
+<tr><td>574</td><td>Benny8</td><td>VfL Braunschweig</td><td>Deutschland</td><td>477</td><td>2023-04-25</td><td>2024-08-14</td></tr>
+<tr><td>575</td><td>Dr.Dave</td><td>SC St. Southampton</td><td>England</td><td>476</td><td>2019-09-30</td><td>2021-01-18</td></tr>
+<tr><td>576</td><td>10er</td><td>SWK Bregenz</td><td>Österreich</td><td>476</td><td>2021-05-02</td><td>2022-08-21</td></tr>
+<tr><td>577</td><td>Samuel Punk</td><td>FCU Haibach</td><td>Deutschland</td><td>475</td><td>2017-02-04</td><td>2018-05-25</td></tr>
+<tr><td>578</td><td>DerCartman</td><td>Swansea Town</td><td>England</td><td>475</td><td>2017-07-21</td><td>2018-11-08</td></tr>
+<tr><td>579</td><td>Waldy</td><td>SSV Hoffenheim</td><td>Deutschland</td><td>474</td><td>2019-02-22</td><td>2020-06-10</td></tr>
+<tr><td>580</td><td>Ponte82</td><td>CF Croix</td><td>Frankreich</td><td>474</td><td>2019-10-06</td><td>2021-01-22</td></tr>
+<tr><td>581</td><td>Madt02</td><td>Union Garching</td><td>Deutschland</td><td>473</td><td>2018-09-13</td><td>2019-12-30</td></tr>
+<tr><td>582</td><td>Joshey</td><td>NFK Remchingen</td><td>Deutschland</td><td>473</td><td>2018-11-27</td><td>2020-03-14</td></tr>
+<tr><td>583</td><td>Cassiooo</td><td>Central Vigo</td><td>Spanien</td><td>473</td><td>2021-02-14</td><td>2022-06-02</td></tr>
+<tr><td>584</td><td>Piksi12381</td><td>KF Široki Brijeg 1948</td><td>Bosnien und Herzegowina</td><td>473</td><td>2024-03-24</td><td>nan</td></tr>
+<tr><td>585</td><td>OhOh</td><td>Babelsberger Kickers</td><td>Deutschland</td><td>472</td><td>2018-12-28</td><td>2020-04-13</td></tr>
+<tr><td>586</td><td>Philstaar</td><td>Inter Wexford</td><td>Irland</td><td>471</td><td>2017-08-03</td><td>2018-11-17</td></tr>
+<tr><td>587</td><td>Romario78</td><td>Délkeleti Kispest</td><td>Ungarn</td><td>471</td><td>2021-10-17</td><td>2023-01-31</td></tr>
+<tr><td>588</td><td>Bernd81</td><td>Union Verl</td><td>Deutschland</td><td>470</td><td>2018-03-26</td><td>2019-07-09</td></tr>
+<tr><td>589</td><td>Efenthius</td><td>Dundee FK</td><td>Schottland</td><td>470</td><td>2019-12-05</td><td>2021-03-19</td></tr>
+<tr><td>590</td><td>Seewolf</td><td>Royaal Anderlecht</td><td>Belgien</td><td>470</td><td>2021-07-06</td><td>2022-10-19</td></tr>
+<tr><td>591</td><td>Matze0403</td><td>SAK Klagenfurt</td><td>Österreich</td><td>470</td><td>2022-11-07</td><td>2024-02-20</td></tr>
+<tr><td>592</td><td>Sven Arlt</td><td>SC Kogge Rostock</td><td>Deutschland</td><td>470</td><td>2023-03-12</td><td>2024-06-24</td></tr>
+<tr><td>593</td><td>eldude</td><td>Uni Craiova</td><td>Rumänien</td><td>469</td><td>2018-04-14</td><td>2019-07-27</td></tr>
+<tr><td>594</td><td>Stone Alone</td><td>SSV Napoli</td><td>Italien</td><td>469</td><td>2020-01-28</td><td>2021-05-11</td></tr>
+<tr><td>595</td><td>Sven Knoche</td><td>AC Cagliari</td><td>Italien</td><td>468</td><td>2020-07-22</td><td>2021-11-02</td></tr>
+<tr><td>596</td><td>Sir Smokealot </td><td>SpVgg Lotte</td><td>Deutschland</td><td>467</td><td>2017-04-25</td><td>2018-08-05</td></tr>
+<tr><td>597</td><td>SimonPurt</td><td>SCC Neuchâtel</td><td>Schweiz</td><td>467</td><td>2020-11-11</td><td>2022-02-21</td></tr>
+<tr><td>598</td><td>ElBullo </td><td>SSC Tra Penía</td><td>San Marino</td><td>466</td><td>2017-01-22</td><td>2018-05-03</td></tr>
+<tr><td>599</td><td>GuMac</td><td>Ciltic Glasgow</td><td>Schottland</td><td>466</td><td>2017-06-01</td><td>2018-09-10</td></tr>
+<tr><td>600</td><td>Mars</td><td>FV Bari</td><td>Italien</td><td>465</td><td>2019-07-30</td><td>2020-11-06</td></tr>
+<tr><td>601</td><td>Poffel</td><td>Voort Deventer</td><td>Niederlande</td><td>465</td><td>2020-05-10</td><td>2021-08-18</td></tr>
+<tr><td>602</td><td>Sir Aleks</td><td>Union Rosenheim</td><td>Deutschland</td><td>464</td><td>2019-01-31</td><td>2020-05-09</td></tr>
+<tr><td>603</td><td>Ric01</td><td>VfB Chemnitz</td><td>Deutschland</td><td>464</td><td>2019-07-08</td><td>2020-10-14</td></tr>
+<tr><td>604</td><td>Tevian</td><td>Sportivo Trapani</td><td>Italien</td><td>463</td><td>2017-12-13</td><td>2019-03-21</td></tr>
+<tr><td>605</td><td>alenadru</td><td>Viktoria Erndtebrück</td><td>Deutschland</td><td>463</td><td>2018-03-26</td><td>2019-07-02</td></tr>
+<tr><td>606</td><td>BMG1900</td><td>FC Peairt 1885</td><td>Schottland</td><td>461</td><td>2017-12-27</td><td>2019-04-02</td></tr>
+<tr><td>607</td><td>Mischa</td><td>Sporting Genk</td><td>Belgien</td><td>461</td><td>2019-12-29</td><td>2021-04-03</td></tr>
+<tr><td>608</td><td>Maddin Wagner</td><td>Concorde Colmar</td><td>Frankreich</td><td>460</td><td>2023-03-08</td><td>2024-06-10</td></tr>
+<tr><td>609</td><td>Flysis</td><td>SV Rapperswil-Jona</td><td>Schweiz</td><td>458</td><td>2024-03-04</td><td>2025-06-05</td></tr>
+<tr><td>610</td><td>Tal-Löwe</td><td>Borussia Wuppertal</td><td>Deutschland</td><td>458</td><td>2024-04-08</td><td>nan</td></tr>
+<tr><td>611</td><td>Max0208</td><td>SH Hammarby</td><td>Schweden</td><td>457</td><td>2021-02-13</td><td>2022-05-16</td></tr>
+<tr><td>612</td><td>Physio</td><td>Liverpool Reds</td><td>England</td><td>456</td><td>2017-06-18</td><td>2018-09-17</td></tr>
+<tr><td>613</td><td>ST.AUELI</td><td>FK Aberdeen 1904</td><td>Schottland</td><td>455</td><td>2017-10-18</td><td>2019-01-16</td></tr>
+<tr><td>614</td><td>Beriossa</td><td>RFC Monaco</td><td>Frankreich</td><td>455</td><td>2024-04-11</td><td>nan</td></tr>
+<tr><td>615</td><td>Pflaume09</td><td>FV Porto</td><td>Portugal</td><td>454</td><td>2017-02-19</td><td>2018-05-19</td></tr>
+<tr><td>616</td><td>zahro</td><td>VVC Brugge</td><td>Belgien</td><td>454</td><td>2017-06-23</td><td>2018-09-20</td></tr>
+<tr><td>617</td><td>Stalli</td><td>Chelsea Soccer</td><td>England</td><td>454</td><td>2018-09-22</td><td>2019-12-20</td></tr>
+<tr><td>618</td><td>Maddin Wagner</td><td>FK Leverkusen</td><td>Deutschland</td><td>454</td><td>2019-12-09</td><td>2021-03-07</td></tr>
+<tr><td>619</td><td>Belle</td><td>Usk Newport</td><td>England</td><td>454</td><td>2023-02-06</td><td>2024-05-05</td></tr>
+<tr><td>620</td><td>Guttfreund</td><td>Anjel Trnava</td><td>Slowakei</td><td>453</td><td>2018-08-17</td><td>2019-11-13</td></tr>
+<tr><td>621</td><td>Gerald 63</td><td>SKK Hamburg</td><td>Deutschland</td><td>451</td><td>2022-02-05</td><td>2023-05-02</td></tr>
+<tr><td>622</td><td>Pigolotti</td><td>Old Boys Antwerpen</td><td>Belgien</td><td>450</td><td>2017-09-17</td><td>2018-12-11</td></tr>
+<tr><td>623</td><td>Semmel</td><td>SSC Oldenburg</td><td>Deutschland</td><td>450</td><td>2018-01-19</td><td>2019-04-14</td></tr>
+<tr><td>624</td><td>Indian96</td><td>Blackpool Sea</td><td>England</td><td>448</td><td>2018-01-08</td><td>2019-04-01</td></tr>
+<tr><td>625</td><td>Timööö</td><td>Royal Oviedo</td><td>Spanien</td><td>448</td><td>2018-01-30</td><td>2019-04-23</td></tr>
+<tr><td>626</td><td>Chris1982</td><td>JSV Göttingen 1908</td><td>Deutschland</td><td>448</td><td>2019-08-15</td><td>2020-11-05</td></tr>
+<tr><td>627</td><td>M.Mildau</td><td>FSL Homburg</td><td>Deutschland</td><td>448</td><td>2024-04-18</td><td>nan</td></tr>
+<tr><td>628</td><td>Jannek</td><td>Parathanikaos Athen</td><td>Griechenland</td><td>447</td><td>2017-11-22</td><td>2019-02-12</td></tr>
+<tr><td>629</td><td>nonno</td><td>Gimnastikos Argos</td><td>Griechenland</td><td>447</td><td>2018-09-15</td><td>2019-12-06</td></tr>
+<tr><td>630</td><td>Ladylover</td><td>Accrington Albion</td><td>England</td><td>445</td><td>2017-04-16</td><td>2018-07-05</td></tr>
+<tr><td>631</td><td>Vollkontakt </td><td>LOK Sarajevo</td><td>Bosnien und Herzegowina</td><td>445</td><td>2020-01-23</td><td>2021-04-12</td></tr>
+<tr><td>632</td><td>Tarek Tintal</td><td>SAK Solna</td><td>Schweden</td><td>445</td><td>2022-01-29</td><td>2023-04-19</td></tr>
+<tr><td>633</td><td>Korte</td><td>FSV Alm Bielefeld</td><td>Deutschland</td><td>444</td><td>2018-04-09</td><td>2019-06-27</td></tr>
+<tr><td>634</td><td>Monta</td><td>Dinamyt Minsk</td><td>Weißrussland</td><td>444</td><td>2020-10-18</td><td>2022-01-05</td></tr>
+<tr><td>635</td><td>Manumann</td><td>Union Aplerbeck</td><td>Deutschland</td><td>444</td><td>2021-11-06</td><td>2023-01-24</td></tr>
+<tr><td>636</td><td>BR612</td><td>Duna Paksi</td><td>Ungarn</td><td>443</td><td>2020-07-17</td><td>2021-10-03</td></tr>
+<tr><td>637</td><td>Klaus Toppmöller</td><td>FKS Bratislava</td><td>Slowakei</td><td>442</td><td>2019-11-24</td><td>2021-02-08</td></tr>
+<tr><td>638</td><td>Rob69</td><td>Baia Mare CF</td><td>Rumänien</td><td>441</td><td>2022-03-31</td><td>2023-06-15</td></tr>
+<tr><td>639</td><td>Schwanef Adolf</td><td>TuS Darmstadt</td><td>Deutschland</td><td>440</td><td>2017-01-24</td><td>2018-04-09</td></tr>
+<tr><td>640</td><td>Offenabcher</td><td>IS Norrköping</td><td>Schweden</td><td>440</td><td>2021-06-12</td><td>2022-08-26</td></tr>
+<tr><td>641</td><td>Dan Burows</td><td>Essener TSV</td><td>Deutschland</td><td>439</td><td>2019-03-02</td><td>2020-05-14</td></tr>
+<tr><td>642</td><td>Freiyja Nordstern </td><td>Þráttótur Reykjavík</td><td>Island</td><td>436</td><td>2017-07-07</td><td>2018-09-16</td></tr>
+<tr><td>643</td><td>Kukki</td><td>Westfalia Gütersloh</td><td>Deutschland</td><td>436</td><td>2017-09-01</td><td>2018-11-11</td></tr>
+<tr><td>644</td><td>Sven Knoche</td><td>London Gunners</td><td>England</td><td>436</td><td>2018-10-29</td><td>2020-01-08</td></tr>
+<tr><td>645</td><td>Offenabcher</td><td>Sonnenhof Schönberg</td><td>Deutschland</td><td>436</td><td>2019-01-23</td><td>2020-04-03</td></tr>
+<tr><td>646</td><td>Fritsdan34</td><td>SGE Rheine</td><td>Deutschland</td><td>436</td><td>2022-02-15</td><td>2023-04-27</td></tr>
+<tr><td>647</td><td>Soletti</td><td>Krayer Kumpels</td><td>Deutschland</td><td>435</td><td>2017-03-22</td><td>2018-05-31</td></tr>
+<tr><td>648</td><td>Berndkrauss</td><td>SAK Akureyri</td><td>Island</td><td>435</td><td>2017-05-01</td><td>2018-07-10</td></tr>
+<tr><td>649</td><td>Marcelo</td><td>Aias Amsterdam FK</td><td>Niederlande</td><td>435</td><td>2017-09-04</td><td>2018-11-13</td></tr>
+<tr><td>650</td><td>Agbonlahor </td><td>Munster Limerick</td><td>Irland</td><td>435</td><td>2020-01-11</td><td>2021-03-21</td></tr>
+<tr><td>651</td><td>SemFri</td><td>Zhunit St. Peterburg</td><td>Russland</td><td>434</td><td>2017-07-16</td><td>2018-09-23</td></tr>
+<tr><td>652</td><td>Herr Digga </td><td>Norwich Soccer</td><td>England</td><td>434</td><td>2019-09-18</td><td>2020-11-25</td></tr>
+<tr><td>653</td><td>Coach-80</td><td>Olympia Marseille</td><td>Frankreich</td><td>433</td><td>2018-04-15</td><td>2019-06-22</td></tr>
+<tr><td>654</td><td>MuayThaiStyle</td><td>Délkeleti Kispest</td><td>Ungarn</td><td>433</td><td>2018-04-29</td><td>2019-07-06</td></tr>
+<tr><td>655</td><td>Offenabcher</td><td>FC Helsingborg</td><td>Schweden</td><td>433</td><td>2020-04-04</td><td>2021-06-11</td></tr>
+<tr><td>656</td><td>Superpip27</td><td>FV Budapest</td><td>Ungarn</td><td>432</td><td>2021-11-27</td><td>2023-02-02</td></tr>
+<tr><td>657</td><td>Icke31</td><td>Central Vigo</td><td>Spanien</td><td>431</td><td>2017-03-12</td><td>2018-05-17</td></tr>
+<tr><td>658</td><td>Captain Romantik </td><td>Tweede Enschede</td><td>Niederlande</td><td>431</td><td>2019-11-26</td><td>2021-01-30</td></tr>
+<tr><td>659</td><td>timo30</td><td>VVC Brugge</td><td>Belgien</td><td>431</td><td>2020-03-22</td><td>2021-05-27</td></tr>
+<tr><td>660</td><td>Dackelblut</td><td>AC Empoli</td><td>Italien</td><td>430</td><td>2017-05-11</td><td>2018-07-15</td></tr>
+<tr><td>661</td><td>Dynamobomber </td><td>Newcastle Union</td><td>England</td><td>430</td><td>2019-03-07</td><td>2020-05-10</td></tr>
+<tr><td>662</td><td>HittinPlayer</td><td>Goloboseray FK</td><td>Türkei</td><td>430</td><td>2019-09-20</td><td>2020-11-23</td></tr>
+<tr><td>663</td><td>Belle</td><td>Red Lions Millwall</td><td>England</td><td>430</td><td>2024-05-06</td><td>nan</td></tr>
+<tr><td>664</td><td>Captain Chaos</td><td>SV Basel</td><td>Schweiz</td><td>429</td><td>2021-01-17</td><td>2022-03-22</td></tr>
+<tr><td>665</td><td>Skeldt</td><td>Barnet Union</td><td>England</td><td>428</td><td>2017-07-28</td><td>2018-09-29</td></tr>
+<tr><td>666</td><td>Albo</td><td>OLFK Bischofswerda</td><td>Deutschland</td><td>428</td><td>2018-07-02</td><td>2019-09-03</td></tr>
+<tr><td>667</td><td>Cassiooo</td><td>Linzer AK</td><td>Österreich</td><td>428</td><td>2019-10-24</td><td>2020-12-25</td></tr>
+<tr><td>668</td><td>Schaumal</td><td>Ciltic Glasgow</td><td>Schottland</td><td>425</td><td>2019-09-14</td><td>2020-11-12</td></tr>
+<tr><td>669</td><td>Dr.Dave</td><td>FC Hapa Tel-Avia</td><td>Israel</td><td>424</td><td>2018-08-01</td><td>2019-09-29</td></tr>
+<tr><td>670</td><td>Sven Knoche</td><td>Slugia Warszawa</td><td>Polen</td><td>422</td><td>2017-09-01</td><td>2018-10-28</td></tr>
+<tr><td>671</td><td>Outcast880 </td><td>UCKA Moskva</td><td>Russland</td><td>422</td><td>2020-05-01</td><td>2021-06-27</td></tr>
+<tr><td>672</td><td>RB.65</td><td>QP Glasgow 1867</td><td>Schottland</td><td>421</td><td>2017-09-01</td><td>2018-10-27</td></tr>
+<tr><td>673</td><td>Bûrzel</td><td>Linzer AK</td><td>Österreich</td><td>421</td><td>2018-03-12</td><td>2019-05-07</td></tr>
+<tr><td>674</td><td>Chripo1982</td><td>SFV Plauen</td><td>Deutschland</td><td>419</td><td>2017-05-25</td><td>2018-07-18</td></tr>
+<tr><td>675</td><td>AndreasW</td><td>Tweede Enschede</td><td>Niederlande</td><td>419</td><td>2018-04-06</td><td>2019-05-30</td></tr>
+<tr><td>676</td><td>Torres</td><td>WF Gullegem</td><td>Belgien</td><td>418</td><td>2017-02-17</td><td>2018-04-11</td></tr>
+<tr><td>677</td><td>Gringoo</td><td>Sportinho Lissabon</td><td>Portugal</td><td>418</td><td>2018-01-16</td><td>2019-03-10</td></tr>
+<tr><td>678</td><td>Kite</td><td>Olimpios Piräus</td><td>Griechenland</td><td>417</td><td>2017-02-08</td><td>2018-04-01</td></tr>
+<tr><td>679</td><td>schwanef2out</td><td>SW Bocholt</td><td>Deutschland</td><td>415</td><td>2017-02-19</td><td>2018-04-10</td></tr>
+<tr><td>680</td><td>Kvlt</td><td>GH Zürich 1887</td><td>Schweiz</td><td>413</td><td>2018-07-25</td><td>2019-09-11</td></tr>
+<tr><td>681</td><td>OdinsSlave</td><td>Atlético Tarragona</td><td>Spanien</td><td>412</td><td>2018-02-11</td><td>2019-03-30</td></tr>
+<tr><td>682</td><td>Thorti28</td><td>KF Dunajská 1905</td><td>Slowakei</td><td>412</td><td>2018-08-18</td><td>2019-10-04</td></tr>
+<tr><td>683</td><td>Blyde</td><td>SI Hobro</td><td>Dänemark</td><td>412</td><td>2020-01-10</td><td>2021-02-25</td></tr>
+<tr><td>684</td><td>Maka</td><td>Derby United</td><td>England</td><td>411</td><td>2017-06-16</td><td>2018-08-01</td></tr>
+<tr><td>685</td><td>Andy 6808</td><td>Preußen Neumünster</td><td>Deutschland</td><td>411</td><td>2017-12-16</td><td>2019-01-31</td></tr>
+<tr><td>686</td><td>Norbog</td><td>CS Villareal</td><td>Spanien</td><td>410</td><td>2019-07-09</td><td>2020-08-22</td></tr>
+<tr><td>687</td><td>Belle</td><td>Manchester Devils</td><td>England</td><td>410</td><td>2020-04-10</td><td>2021-05-25</td></tr>
+<tr><td>688</td><td>timo30</td><td>ASS Dundee</td><td>Schottland</td><td>409</td><td>2021-07-08</td><td>2022-08-21</td></tr>
+<tr><td>689</td><td>Schuwiegoogoo</td><td>Rotherham County</td><td>England</td><td>407</td><td>2019-01-13</td><td>2020-02-24</td></tr>
+<tr><td>690</td><td>Fahrudin Jusufi</td><td>Wattenscheider Kickers</td><td>Deutschland</td><td>407</td><td>2024-05-29</td><td>nan</td></tr>
+<tr><td>691</td><td>Mr Wayne</td><td>Sportivo Alaves</td><td>Spanien</td><td>406</td><td>2019-07-03</td><td>2020-08-12</td></tr>
+<tr><td>692</td><td>Norbog</td><td>VVC Brugge</td><td>Belgien</td><td>406</td><td>2022-03-20</td><td>2023-04-30</td></tr>
+<tr><td>693</td><td>David Ebersbacher</td><td>SSC Bremen 1915</td><td>Deutschland</td><td>405</td><td>2017-07-18</td><td>2018-08-27</td></tr>
+<tr><td>694</td><td>DiStefano</td><td>FKS Bratislava</td><td>Slowakei</td><td>405</td><td>2021-02-21</td><td>2022-04-02</td></tr>
+<tr><td>695</td><td>Mr.Trost</td><td>FV Austrien Salzburg</td><td>Österreich</td><td>405</td><td>2024-01-14</td><td>2025-02-22</td></tr>
+<tr><td>696</td><td>Culater</td><td>US Lyon 1965</td><td>Frankreich</td><td>404</td><td>2018-06-18</td><td>2019-07-27</td></tr>
+<tr><td>697</td><td>Zero</td><td>FC Galway</td><td>Irland</td><td>403</td><td>2017-11-06</td><td>2018-12-14</td></tr>
+<tr><td>698</td><td>Chris J</td><td>BFV München</td><td>Deutschland</td><td>402</td><td>2019-09-06</td><td>2020-10-12</td></tr>
+<tr><td>699</td><td>Betzi1974  </td><td>Walsall City</td><td>England</td><td>400</td><td>2017-11-27</td><td>2019-01-01</td></tr>
+<tr><td>700</td><td>Max0208</td><td>Petrol Wolfsburg</td><td>Deutschland</td><td>400</td><td>2018-10-22</td><td>2019-11-26</td></tr>
+<tr><td>701</td><td>Rafieki</td><td>Victoria Düsseldorf</td><td>Deutschland</td><td>399</td><td>2017-09-09</td><td>2018-10-13</td></tr>
+<tr><td>702</td><td>Hanssarpei</td><td>Petrol Wolfsburg</td><td>Deutschland</td><td>399</td><td>2017-09-15</td><td>2018-10-19</td></tr>
+<tr><td>703</td><td>Superpip27</td><td>LB Bonfica</td><td>Portugal</td><td>399</td><td>2018-06-16</td><td>2019-07-20</td></tr>
+<tr><td>704</td><td>RosarioBrancato</td><td>GH Zürich 1887</td><td>Schweiz</td><td>398</td><td>2020-05-10</td><td>2021-06-12</td></tr>
+<tr><td>705</td><td>Pinker</td><td>GSV Barsinghausen</td><td>Deutschland</td><td>397</td><td>2017-03-03</td><td>2018-04-04</td></tr>
+<tr><td>706</td><td>Peter666</td><td>FK Ioannina</td><td>Griechenland</td><td>397</td><td>2019-09-26</td><td>2020-10-27</td></tr>
+<tr><td>707</td><td>PatrickThoma</td><td>Goloboseray FK</td><td>Türkei</td><td>396</td><td>2018-08-18</td><td>2019-09-18</td></tr>
+<tr><td>708</td><td>Stili</td><td>FV Porto</td><td>Portugal</td><td>396</td><td>2019-03-26</td><td>2020-04-25</td></tr>
+<tr><td>709</td><td>Hannsi</td><td>FC Narva Buse</td><td>Estland</td><td>395</td><td>2018-10-13</td><td>2019-11-12</td></tr>
+<tr><td>710</td><td>Saves78 </td><td>Cork United</td><td>Irland</td><td>395</td><td>2021-09-08</td><td>2022-10-08</td></tr>
+<tr><td>711</td><td>Mora1981</td><td>Rot-Weiß Ingolstadt</td><td>Deutschland</td><td>394</td><td>2017-08-08</td><td>2018-09-06</td></tr>
+<tr><td>712</td><td>Norman Brandt </td><td>FK Dunfermline</td><td>Schottland</td><td>394</td><td>2017-11-03</td><td>2018-12-02</td></tr>
+<tr><td>713</td><td>Andi1978</td><td>Olympia Berlin</td><td>Deutschland</td><td>394</td><td>2020-03-18</td><td>2021-04-16</td></tr>
+<tr><td>714</td><td>Flo75</td><td>Robon Kazan</td><td>Russland</td><td>394</td><td>2021-08-11</td><td>2022-09-09</td></tr>
+<tr><td>715</td><td>#kurtl#</td><td>Lukumotiva Moskva</td><td>Russland</td><td>394</td><td>2023-09-15</td><td>2024-10-13</td></tr>
+<tr><td>716</td><td>SaarKing</td><td>SV Porta Trier</td><td>Deutschland</td><td>393</td><td>2024-06-12</td><td>nan</td></tr>
+<tr><td>717</td><td>King scar</td><td>FK Hoppa Steyr</td><td>Österreich</td><td>392</td><td>2019-09-25</td><td>2020-10-21</td></tr>
+<tr><td>718</td><td>Summertime </td><td>Breisgauer SV</td><td>Deutschland</td><td>392</td><td>2020-05-25</td><td>2021-06-21</td></tr>
+<tr><td>719</td><td>HansDampf</td><td>Olimpios Piräus</td><td>Griechenland</td><td>392</td><td>2023-03-09</td><td>2024-04-04</td></tr>
+<tr><td>720</td><td>Bernd993 </td><td>SCC Neuchâtel</td><td>Schweiz</td><td>391</td><td>2019-06-17</td><td>2020-07-12</td></tr>
+<tr><td>721</td><td>Asch_9</td><td>QSFC Dumfries</td><td>Schottland</td><td>390</td><td>2019-06-26</td><td>2020-07-20</td></tr>
+<tr><td>722</td><td>! G-STAR! </td><td>NFV Meppen</td><td>Deutschland</td><td>390</td><td>2022-09-11</td><td>2023-10-06</td></tr>
+<tr><td>723</td><td>Therapeut</td><td>FK Sachsen Aue</td><td>Deutschland</td><td>389</td><td>2023-06-20</td><td>2024-07-13</td></tr>
+<tr><td>724</td><td>Smit</td><td>SK Utrecht</td><td>Niederlande</td><td>388</td><td>2017-05-19</td><td>2018-06-11</td></tr>
+<tr><td>725</td><td>Gringoo</td><td>Germania Paris</td><td>Frankreich</td><td>388</td><td>2019-03-11</td><td>2020-04-02</td></tr>
+<tr><td>726</td><td>Wowkas</td><td>Aias Amsterdam FK</td><td>Niederlande</td><td>388</td><td>2024-06-17</td><td>nan</td></tr>
+<tr><td>727</td><td>Alfred Jacklord </td><td>Gnaser FC</td><td>Österreich</td><td>387</td><td>2021-07-13</td><td>2022-08-04</td></tr>
+<tr><td>728</td><td>MoveStudio</td><td>HSV Concorde</td><td>Deutschland</td><td>385</td><td>2024-06-20</td><td>nan</td></tr>
+<tr><td>729</td><td>jumping</td><td>SK Austrien Wien</td><td>Österreich</td><td>384</td><td>2021-07-14</td><td>2022-08-02</td></tr>
+<tr><td>730</td><td>Asch_9</td><td>Robon Kazan</td><td>Russland</td><td>382</td><td>2020-07-21</td><td>2021-08-07</td></tr>
+<tr><td>731</td><td>Raketenfinger</td><td>Jizera Boleslav</td><td>Tschechien</td><td>381</td><td>2017-09-01</td><td>2018-09-17</td></tr>
+<tr><td>732</td><td>Sven Arlt</td><td>ASS Dundee</td><td>Schottland</td><td>380</td><td>2024-06-25</td><td>nan</td></tr>
+<tr><td>733</td><td>Ichichich2</td><td>Xäver Länkärän</td><td>Aserbaidschan</td><td>379</td><td>2023-09-25</td><td>2024-10-08</td></tr>
+<tr><td>734</td><td>Nummer eins im Land </td><td>ASS Troyes</td><td>Frankreich</td><td>378</td><td>2018-02-04</td><td>2019-02-17</td></tr>
+<tr><td>735</td><td>Spiegel </td><td>Sportivo Bilbao</td><td>Spanien</td><td>377</td><td>2017-05-25</td><td>2018-06-06</td></tr>
+<tr><td>736</td><td>theSmoke</td><td>Speertak Praha</td><td>Tschechien</td><td>377</td><td>2018-05-03</td><td>2019-05-15</td></tr>
+<tr><td>737</td><td>Roy Hedermann </td><td>SAV Sandersdorf</td><td>Deutschland</td><td>377</td><td>2019-02-26</td><td>2020-03-09</td></tr>
+<tr><td>738</td><td>Tiger 29</td><td>Dynamo Zwickau</td><td>Deutschland</td><td>376</td><td>2019-09-30</td><td>2020-10-10</td></tr>
+<tr><td>739</td><td>DaSechzger</td><td>TSG Landsberg</td><td>Deutschland</td><td>376</td><td>2023-05-30</td><td>2024-06-09</td></tr>
+<tr><td>740</td><td>DJAttic</td><td>BFV München</td><td>Deutschland</td><td>376</td><td>2023-06-28</td><td>2024-07-08</td></tr>
+<tr><td>741</td><td>Kof </td><td>Intra Mailand</td><td>Italien</td><td>375</td><td>2020-01-26</td><td>2021-02-04</td></tr>
+<tr><td>742</td><td>Raphi87</td><td>Preußen Unterföhring</td><td>Deutschland</td><td>374</td><td>2017-02-12</td><td>2018-02-21</td></tr>
+<tr><td>743</td><td>DJ Dodo</td><td>Breisgauer SV</td><td>Deutschland</td><td>374</td><td>2017-06-18</td><td>2018-06-27</td></tr>
+<tr><td>744</td><td>TTman</td><td>TuS Bönningstedt</td><td>Deutschland</td><td>374</td><td>2018-04-22</td><td>2019-05-01</td></tr>
+<tr><td>745</td><td>de_clair</td><td>Huddersfield Sports</td><td>England</td><td>373</td><td>2017-07-22</td><td>2018-07-30</td></tr>
+<tr><td>746</td><td>Alex Conradt</td><td>SK Biel/Bienne</td><td>Schweiz</td><td>373</td><td>2017-09-18</td><td>2018-09-26</td></tr>
+<tr><td>747</td><td>Gin Tonic 75</td><td>FFK Dornbirn</td><td>Österreich</td><td>373</td><td>2017-12-17</td><td>2018-12-25</td></tr>
+<tr><td>748</td><td>Death Dealer</td><td>Aluminium Aachen</td><td>Deutschland</td><td>373</td><td>2018-01-12</td><td>2019-01-20</td></tr>
+<tr><td>749</td><td>Duge</td><td>FV Austrien Salzburg</td><td>Österreich</td><td>373</td><td>2018-03-11</td><td>2019-03-19</td></tr>
+<tr><td>750</td><td>Wynton</td><td>Lukumotiva Moskva</td><td>Russland</td><td>373</td><td>2018-07-02</td><td>2019-07-10</td></tr>
+<tr><td>751</td><td>Jindobre </td><td>SSC Montpellier</td><td>Frankreich</td><td>373</td><td>2019-05-02</td><td>2020-05-09</td></tr>
+<tr><td>752</td><td>DiStefano</td><td>Sori Lugansk</td><td>Ukraine</td><td>373</td><td>2019-12-27</td><td>2021-01-03</td></tr>
+<tr><td>753</td><td>Chris J</td><td>SSC Kallithea</td><td>Griechenland</td><td>372</td><td>2020-11-05</td><td>2021-11-12</td></tr>
+<tr><td>754</td><td>MCR24</td><td>AS Strassen</td><td>Luxemburg</td><td>372</td><td>2020-11-05</td><td>2021-11-12</td></tr>
+<tr><td>755</td><td>Stefan K</td><td>Sori Lugansk</td><td>Ukraine</td><td>371</td><td>2018-05-26</td><td>2019-06-01</td></tr>
+<tr><td>756</td><td>B.Turner</td><td>Goloboseray FK</td><td>Türkei</td><td>371</td><td>2024-07-04</td><td>nan</td></tr>
+<tr><td>757</td><td>Pups IV</td><td>Wimbledon Soccer</td><td>England</td><td>370</td><td>2017-08-07</td><td>2018-08-12</td></tr>
+<tr><td>758</td><td>Rambazamba </td><td>OFG Nice</td><td>Frankreich</td><td>370</td><td>2018-03-12</td><td>2019-03-17</td></tr>
+<tr><td>759</td><td>Belle</td><td>Olympia Berlin</td><td>Deutschland</td><td>370</td><td>2021-08-16</td><td>2022-08-21</td></tr>
+<tr><td>760</td><td>Stili</td><td>SSC Montpellier</td><td>Frankreich</td><td>369</td><td>2017-06-14</td><td>2018-06-18</td></tr>
+<tr><td>761</td><td>Cem </td><td>Juventus Bern</td><td>Schweiz</td><td>368</td><td>2018-11-21</td><td>2019-11-24</td></tr>
+<tr><td>762</td><td>TDog</td><td>AC Sportivo Madrid</td><td>Spanien</td><td>368</td><td>2024-07-07</td><td>nan</td></tr>
+<tr><td>763</td><td>BBQBear</td><td>CD León</td><td>Spanien</td><td>366</td><td>2017-12-01</td><td>2018-12-02</td></tr>
+<tr><td>764</td><td>HansDampf</td><td>SSC Zwolle 91</td><td>Niederlande</td><td>366</td><td>2018-05-17</td><td>2019-05-18</td></tr>
+<tr><td>765</td><td>Dr. Love</td><td>SSC Bremen 1915</td><td>Deutschland</td><td>366</td><td>2018-09-03</td><td>2019-09-04</td></tr>
+<tr><td>766</td><td>Durza89</td><td>Wehener SC</td><td>Deutschland</td><td>365</td><td>2017-07-02</td><td>2018-07-02</td></tr>
+<tr><td>767</td><td>Marko Stuhr </td><td>FV Sevilla</td><td>Spanien</td><td>365</td><td>2020-02-08</td><td>2021-02-07</td></tr>
+<tr><td>768</td><td>squirrel</td><td>ASS Dundee</td><td>Schottland</td><td>365</td><td>2020-07-03</td><td>2021-07-03</td></tr>
+<tr><td>769</td><td>Asch_9</td><td>Boćnust Podgorica</td><td>Montenegro</td><td>364</td><td>2018-06-26</td><td>2019-06-25</td></tr>
+<tr><td>770</td><td>Basca</td><td>Volgar Saratov</td><td>Russland</td><td>364</td><td>2019-01-16</td><td>2020-01-15</td></tr>
+<tr><td>771</td><td>3 Ecken 1 Elfer</td><td>Union Unterhaching</td><td>Deutschland</td><td>364</td><td>2024-07-11</td><td>nan</td></tr>
+<tr><td>772</td><td>Iltis</td><td>Southend Athletics</td><td>England</td><td>363</td><td>2017-07-20</td><td>2018-07-18</td></tr>
+<tr><td>773</td><td>buttje</td><td>Tvøroyri BF</td><td>Färöer</td><td>363</td><td>2017-11-28</td><td>2018-11-26</td></tr>
+<tr><td>774</td><td>Ramon08101980</td><td>Ciltic Glasgow</td><td>Schottland</td><td>363</td><td>2018-09-13</td><td>2019-09-11</td></tr>
+<tr><td>775</td><td>POWERpaul</td><td>FV Porto</td><td>Portugal</td><td>361</td><td>2021-11-18</td><td>2022-11-14</td></tr>
+<tr><td>776</td><td>Akki Tehrrohr </td><td>Elektro Cottbus</td><td>Deutschland</td><td>361</td><td>2024-07-14</td><td>nan</td></tr>
+<tr><td>777</td><td>TobieWuff </td><td>Adler Sprockhövel</td><td>Deutschland</td><td>360</td><td>2017-09-02</td><td>2018-08-28</td></tr>
+<tr><td>778</td><td>Overdick</td><td>Dartford City</td><td>England</td><td>360</td><td>2018-01-24</td><td>2019-01-19</td></tr>
+<tr><td>779</td><td>Waschbär</td><td>SHV Passau</td><td>Deutschland</td><td>360</td><td>2019-07-15</td><td>2020-07-09</td></tr>
+<tr><td>780</td><td>Cem72</td><td>SSC Altach</td><td>Österreich</td><td>360</td><td>2019-12-29</td><td>2020-12-23</td></tr>
+<tr><td>781</td><td>M Bolle</td><td>Petrol Wolfsburg</td><td>Deutschland</td><td>360</td><td>2022-11-28</td><td>2023-11-23</td></tr>
+<tr><td>782</td><td>DRUFFWIENIXX </td><td>VfL Arnoldsweiler</td><td>Deutschland</td><td>359</td><td>2017-04-17</td><td>2018-04-11</td></tr>
+<tr><td>783</td><td>Dr. Taktik</td><td>Royal Sevilla</td><td>Spanien</td><td>359</td><td>2017-09-01</td><td>2018-08-26</td></tr>
+<tr><td>784</td><td>Moritz1990</td><td>SSC Leeuwarden</td><td>Niederlande</td><td>359</td><td>2018-05-18</td><td>2019-05-12</td></tr>
+<tr><td>785</td><td>Brolli75</td><td>FV Vaduz 1935</td><td>Schweiz</td><td>359</td><td>2018-09-19</td><td>2019-09-13</td></tr>
+<tr><td>786</td><td>Wowkas</td><td>Olympia Marseille</td><td>Frankreich</td><td>359</td><td>2020-10-22</td><td>2021-10-16</td></tr>
+<tr><td>787</td><td>B-Side</td><td>UN Luxemburg</td><td>Luxemburg</td><td>358</td><td>2017-02-27</td><td>2018-02-20</td></tr>
+<tr><td>788</td><td>Kaschte</td><td>AFK Osijek</td><td>Kroatien</td><td>358</td><td>2018-06-08</td><td>2019-06-01</td></tr>
+<tr><td>789</td><td>Superpip27</td><td>US Lyon 1965</td><td>Frankreich</td><td>357</td><td>2017-06-23</td><td>2018-06-15</td></tr>
+<tr><td>790</td><td>Picanto</td><td>Dynamit Kiew</td><td>Ukraine</td><td>357</td><td>2020-01-21</td><td>2021-01-12</td></tr>
+<tr><td>791</td><td>Calli_31</td><td>Wehener SC</td><td>Deutschland</td><td>357</td><td>2020-02-19</td><td>2021-02-10</td></tr>
+<tr><td>792</td><td>Udi </td><td>CS Lanzarote</td><td>Spanien</td><td>357</td><td>2021-08-29</td><td>2022-08-21</td></tr>
+<tr><td>793</td><td>J. R.</td><td>Speertak Rotterdam</td><td>Niederlande</td><td>356</td><td>2018-05-13</td><td>2019-05-04</td></tr>
+<tr><td>794</td><td>FischerBernd</td><td>Başektaş Istanbul</td><td>Türkei</td><td>356</td><td>2021-02-19</td><td>2022-02-10</td></tr>
+<tr><td>795</td><td>Pakur</td><td>AC Cagliari</td><td>Italien</td><td>356</td><td>2023-11-26</td><td>2024-11-16</td></tr>
+<tr><td>796</td><td>El Gandhi</td><td>Tottenham Rooster</td><td>England</td><td>355</td><td>2024-07-20</td><td>nan</td></tr>
+<tr><td>797</td><td>Matze0403</td><td>SD Amorebieta</td><td>Spanien</td><td>355</td><td>2024-07-20</td><td>nan</td></tr>
+<tr><td>798</td><td>Cem </td><td>Fortuna Heidenheim</td><td>Deutschland</td><td>354</td><td>2019-11-25</td><td>2020-11-13</td></tr>
+<tr><td>799</td><td>paulchen007</td><td>Kesımboşaspar FK</td><td>Türkei</td><td>354</td><td>2024-07-21</td><td>nan</td></tr>
+<tr><td>800</td><td>Coach-80</td><td>Speertak Rotterdam</td><td>Niederlande</td><td>353</td><td>2017-03-15</td><td>2018-03-03</td></tr>
+<tr><td>801</td><td>Nordlicht76</td><td>PF Orienta Varna</td><td>Bulgarien</td><td>353</td><td>2018-07-07</td><td>2019-06-25</td></tr>
+<tr><td>802</td><td>Kontra</td><td>Union Zulte Waregem</td><td>Belgien</td><td>353</td><td>2018-12-24</td><td>2019-12-12</td></tr>
+<tr><td>803</td><td>t-benny</td><td>Başektaş Istanbul</td><td>Türkei</td><td>353</td><td>2019-10-04</td><td>2020-09-21</td></tr>
+<tr><td>804</td><td>SGEintracht</td><td>FKPG Saalfelden</td><td>Österreich</td><td>353</td><td>2022-08-15</td><td>2023-08-03</td></tr>
+<tr><td>805</td><td>Daniel1213</td><td>Shumbrock Wanderers</td><td>Irland</td><td>352</td><td>2017-05-31</td><td>2018-05-18</td></tr>
+<tr><td>806</td><td>Topsy1407</td><td>Juventus Bern</td><td>Schweiz</td><td>352</td><td>2017-11-30</td><td>2018-11-17</td></tr>
+<tr><td>807</td><td>Lommy II</td><td>Schwarz-Weiß Aalen</td><td>Deutschland</td><td>352</td><td>2019-09-18</td><td>2020-09-04</td></tr>
+<tr><td>808</td><td>Alex Cantarero</td><td>Pfalz Weiden</td><td>Deutschland</td><td>352</td><td>2020-08-08</td><td>2021-07-26</td></tr>
+<tr><td>809</td><td>Pat ricksenn</td><td>Racing Tenerife</td><td>Spanien</td><td>352</td><td>2024-07-23</td><td>nan</td></tr>
+<tr><td>810</td><td>Andi1978</td><td>Maidenhead Doves</td><td>England</td><td>351</td><td>2021-04-17</td><td>2022-04-03</td></tr>
+<tr><td>811</td><td>Godzillaghost</td><td>SBK Pfullendorf</td><td>Deutschland</td><td>350</td><td>2018-05-29</td><td>2019-05-14</td></tr>
+<tr><td>812</td><td>Williwürzig</td><td>Spartak Jablonek</td><td>Tschechien</td><td>349</td><td>2017-10-08</td><td>2018-09-22</td></tr>
+<tr><td>813</td><td>Marcelo</td><td>FC Roma</td><td>Italien</td><td>349</td><td>2018-11-14</td><td>2019-10-29</td></tr>
+<tr><td>814</td><td>BR612</td><td>SF Getafe</td><td>Spanien</td><td>349</td><td>2022-01-12</td><td>2022-12-27</td></tr>
+<tr><td>815</td><td>Waldy</td><td>FSV Alm Bielefeld</td><td>Deutschland</td><td>349</td><td>2023-10-03</td><td>2024-09-16</td></tr>
+<tr><td>816</td><td>Calli-31</td><td>FKV Köln</td><td>Deutschland</td><td>349</td><td>2023-12-20</td><td>2024-12-03</td></tr>
+<tr><td>817</td><td>Spartacus777</td><td>SC Waller Seekirchen</td><td>Österreich</td><td>348</td><td>2017-06-01</td><td>2018-05-15</td></tr>
+<tr><td>818</td><td>Kurti</td><td>PF Orienta Varna</td><td>Bulgarien</td><td>348</td><td>2021-09-07</td><td>2022-08-21</td></tr>
+<tr><td>819</td><td>J. R.</td><td>Old Boys Antwerpen</td><td>Belgien</td><td>346</td><td>2019-05-05</td><td>2020-04-15</td></tr>
+<tr><td>820</td><td>Williwürzig</td><td>Sunny Lowestoft</td><td>England</td><td>344</td><td>2018-12-29</td><td>2019-12-08</td></tr>
+<tr><td>821</td><td>! G-STAR! </td><td>SC Kogge Rostock</td><td>Deutschland</td><td>344</td><td>2019-10-02</td><td>2020-09-10</td></tr>
+<tr><td>822</td><td>SimonPurt</td><td>Sportinho Lissabon</td><td>Portugal</td><td>344</td><td>2019-12-02</td><td>2020-11-10</td></tr>
+<tr><td>823</td><td>WildWest</td><td>SCP Tenisca</td><td>Spanien</td><td>344</td><td>2020-02-20</td><td>2021-01-29</td></tr>
+<tr><td>824</td><td>Outcast880 </td><td>FVB Larnaka</td><td>Zypern</td><td>342</td><td>2019-04-18</td><td>2020-03-25</td></tr>
+<tr><td>825</td><td>Penguin</td><td>Derry United</td><td>Irland</td><td>342</td><td>2023-07-10</td><td>2024-06-16</td></tr>
+<tr><td>826</td><td>Ralphi86</td><td>Royaal Anderlecht</td><td>Belgien</td><td>341</td><td>2019-06-12</td><td>2020-05-18</td></tr>
+<tr><td>827</td><td>Andi1978</td><td>Birmingham Villans</td><td>England</td><td>340</td><td>2017-08-24</td><td>2018-07-30</td></tr>
+<tr><td>828</td><td>Maddel </td><td>Väsby Soccer</td><td>Schweden</td><td>340</td><td>2018-05-13</td><td>2019-04-18</td></tr>
+<tr><td>829</td><td>Christoph.B.</td><td>Saarbrückener SC</td><td>Deutschland</td><td>340</td><td>2018-09-15</td><td>2019-08-21</td></tr>
+<tr><td>830</td><td>KingEddy</td><td>SK Moskau</td><td>Russland</td><td>340</td><td>2021-03-25</td><td>2022-02-28</td></tr>
+<tr><td>831</td><td>Emiljonka</td><td>Inter Floriana</td><td>Malta</td><td>339</td><td>2017-06-09</td><td>2018-05-14</td></tr>
+<tr><td>832</td><td>Suci</td><td>Športový Trenčín</td><td>Slowakei</td><td>339</td><td>2017-09-11</td><td>2018-08-16</td></tr>
+<tr><td>833</td><td>John Mc Cena</td><td>Newcastle Union</td><td>England</td><td>339</td><td>2018-03-30</td><td>2019-03-04</td></tr>
+<tr><td>834</td><td>DJAttic</td><td>FV Valencia</td><td>Spanien</td><td>339</td><td>2020-02-19</td><td>2021-01-23</td></tr>
+<tr><td>835</td><td>Henda</td><td>East Ham London</td><td>England</td><td>338</td><td>2018-03-08</td><td>2019-02-09</td></tr>
+<tr><td>836</td><td>Stalli</td><td>CP London Eagles</td><td>England</td><td>337</td><td>2017-10-19</td><td>2018-09-21</td></tr>
+<tr><td>837</td><td>Mr Wayne</td><td>FK Raptor Wien</td><td>Österreich</td><td>337</td><td>2017-12-05</td><td>2018-11-07</td></tr>
+<tr><td>838</td><td>ST.AUELI</td><td>Gosport Rebells</td><td>England</td><td>337</td><td>2019-01-17</td><td>2019-12-20</td></tr>
+<tr><td>839</td><td>POWERpaul</td><td>AC Empoli</td><td>Italien</td><td>337</td><td>2020-12-15</td><td>2021-11-17</td></tr>
+<tr><td>840</td><td>Thorsten Schmidt </td><td>FK Lillestrøm</td><td>Norwegen</td><td>336</td><td>2017-01-11</td><td>2017-12-13</td></tr>
+<tr><td>841</td><td>Sven Arlt</td><td>FK Sachsen Aue</td><td>Deutschland</td><td>336</td><td>2017-10-05</td><td>2018-09-06</td></tr>
+<tr><td>842</td><td>Hawkey</td><td>Fortuna Norderstedt</td><td>Deutschland</td><td>336</td><td>2018-02-04</td><td>2019-01-06</td></tr>
+<tr><td>843</td><td>Millski1</td><td>Sportowy Sosnowiec</td><td>Polen</td><td>336</td><td>2021-08-11</td><td>2022-07-13</td></tr>
+<tr><td>844</td><td>Yeboha </td><td>Birmingham Town</td><td>England</td><td>335</td><td>2019-04-21</td><td>2020-03-21</td></tr>
+<tr><td>845</td><td>Suci</td><td>West Bromwich United</td><td>England</td><td>334</td><td>2024-08-10</td><td>nan</td></tr>
+<tr><td>846</td><td>John Mc Cena</td><td>Thuner SC</td><td>Schweiz</td><td>333</td><td>2019-03-29</td><td>2020-02-25</td></tr>
+<tr><td>847</td><td>Gepard</td><td>Lappi Rovaniemi</td><td>Finnland</td><td>332</td><td>2017-10-19</td><td>2018-09-16</td></tr>
+<tr><td>848</td><td>VanGraf</td><td>KF Haldenkvìk</td><td>Norwegen</td><td>332</td><td>2018-09-14</td><td>2019-08-12</td></tr>
+<tr><td>849</td><td>#kurtl#</td><td>ASK Eindhoven</td><td>Niederlande</td><td>332</td><td>2021-11-11</td><td>2022-10-09</td></tr>
+<tr><td>850</td><td>Rudi Raffke</td><td>FC St. Hardenberg </td><td>Niederlande</td><td>331</td><td>2017-05-14</td><td>2018-04-10</td></tr>
+<tr><td>851</td><td>Ohneworte76</td><td>Blau-Gelb Jena</td><td>Deutschland</td><td>331</td><td>2017-09-11</td><td>2018-08-08</td></tr>
+<tr><td>852</td><td>DasTor</td><td>Burnley Clarets</td><td>England</td><td>330</td><td>2018-04-23</td><td>2019-03-19</td></tr>
+<tr><td>853</td><td>Yamaban</td><td>AK Sluvaria Praha</td><td>Tschechien</td><td>329</td><td>2018-01-01</td><td>2018-11-26</td></tr>
+<tr><td>854</td><td>Soríon</td><td>Zhunit St. Peterburg</td><td>Russland</td><td>329</td><td>2020-01-31</td><td>2020-12-25</td></tr>
+<tr><td>855</td><td>PatrickThoma</td><td>SSV Frankfurt 1897</td><td>Deutschland</td><td>329</td><td>2020-09-08</td><td>2021-08-03</td></tr>
+<tr><td>856</td><td>Benny8</td><td>Parathanikaos Athen</td><td>Griechenland</td><td>329</td><td>2024-08-15</td><td>nan</td></tr>
+<tr><td>857</td><td>Dobrogea</td><td>Gunçlorbirleği AK</td><td>Türkei</td><td>329</td><td>2024-08-15</td><td>nan</td></tr>
+<tr><td>858</td><td>HHJung1978</td><td>HSV Frankfurt</td><td>Deutschland</td><td>328</td><td>2017-08-09</td><td>2018-07-03</td></tr>
+<tr><td>859</td><td>Stylowylo88 </td><td>SSC Zwolle 91</td><td>Niederlande</td><td>328</td><td>2019-05-23</td><td>2020-04-15</td></tr>
+<tr><td>860</td><td>Ojetto</td><td>Duna Paksi</td><td>Ungarn</td><td>328</td><td>2019-08-17</td><td>2020-07-10</td></tr>
+<tr><td>861</td><td>*LOLO*</td><td>KB Sarıyer</td><td>Türkei</td><td>328</td><td>2024-08-16</td><td>nan</td></tr>
+<tr><td>862</td><td>Bucki</td><td>GH Zürich 1887</td><td>Schweiz</td><td>327</td><td>2021-06-16</td><td>2022-05-09</td></tr>
+<tr><td>863</td><td>Krank0815</td><td>Intra Pula 1948</td><td>Kroatien</td><td>326</td><td>2018-11-11</td><td>2019-10-03</td></tr>
+<tr><td>864</td><td>Weddiminator</td><td>CD León</td><td>Spanien</td><td>326</td><td>2024-08-18</td><td>nan</td></tr>
+<tr><td>865</td><td>El Blanko</td><td>HSV Kiel</td><td>Deutschland</td><td>325</td><td>2019-02-01</td><td>2019-12-23</td></tr>
+<tr><td>866</td><td>5639</td><td>Sportivo Braga</td><td>Portugal</td><td>325</td><td>2019-12-01</td><td>2020-10-21</td></tr>
+<tr><td>867</td><td>ElCapitano96</td><td>Sardigna Nuorese</td><td>Italien</td><td>325</td><td>2024-07-11</td><td>2025-06-01</td></tr>
+<tr><td>868</td><td>DruffiDeluxe</td><td>FN Rotterdam</td><td>Niederlande</td><td>324</td><td>2017-09-27</td><td>2018-08-17</td></tr>
+<tr><td>869</td><td>Feosma</td><td>OZ Oosterwijk</td><td>Belgien</td><td>323</td><td>2017-01-13</td><td>2017-12-02</td></tr>
+<tr><td>870</td><td>Pep Sven "Guardiola"</td><td>Llandudno Town</td><td>Wales</td><td>323</td><td>2017-12-28</td><td>2018-11-16</td></tr>
+<tr><td>871</td><td>Uli Löffel</td><td>VVC Brugge</td><td>Belgien</td><td>323</td><td>2023-12-02</td><td>2024-10-20</td></tr>
+<tr><td>872</td><td>Soríon</td><td>UCKA Moskva</td><td>Russland</td><td>322</td><td>2018-11-13</td><td>2019-10-01</td></tr>
+<tr><td>873</td><td>zevman</td><td>Sporting Aarau</td><td>Schweiz</td><td>321</td><td>2017-03-02</td><td>2018-01-17</td></tr>
+<tr><td>874</td><td>Lang</td><td>Borussia Fürth</td><td>Deutschland</td><td>321</td><td>2017-05-23</td><td>2018-04-09</td></tr>
+<tr><td>875</td><td>Sir Marcus of H96</td><td>Lava Southport</td><td>England</td><td>321</td><td>2017-11-29</td><td>2018-10-16</td></tr>
+<tr><td>876</td><td>Der Schreckliche </td><td>AQ Fréjus-St.Raphaël</td><td>Frankreich</td><td>321</td><td>2018-04-12</td><td>2019-02-27</td></tr>
+<tr><td>877</td><td>Weddiminator</td><td>SC Fiorentina</td><td>Italien</td><td>321</td><td>2019-03-19</td><td>2020-02-03</td></tr>
+<tr><td>878</td><td>Yeboha </td><td>Sonnenhof Schönberg</td><td>Deutschland</td><td>320</td><td>2017-01-06</td><td>2017-11-22</td></tr>
+<tr><td>879</td><td>TimRupp</td><td>SK Skive 1902</td><td>Dänemark</td><td>320</td><td>2017-11-07</td><td>2018-09-23</td></tr>
+<tr><td>880</td><td>REDOXCABAL</td><td>RPFV Worms</td><td>Deutschland</td><td>320</td><td>2019-09-11</td><td>2020-07-27</td></tr>
+<tr><td>881</td><td>TDog</td><td>Nogomet Split</td><td>Kroatien</td><td>320</td><td>2019-11-27</td><td>2020-10-12</td></tr>
+<tr><td>882</td><td>Great Gazoo</td><td>Red Wings Salzburg</td><td>Österreich</td><td>319</td><td>2017-05-23</td><td>2018-04-07</td></tr>
+<tr><td>883</td><td>Pijanac</td><td>Nogomet Split</td><td>Kroatien</td><td>319</td><td>2018-07-25</td><td>2019-06-09</td></tr>
+<tr><td>884</td><td>Ponte82</td><td>Birmingham Villans</td><td>England</td><td>319</td><td>2018-11-20</td><td>2019-10-05</td></tr>
+<tr><td>885</td><td>Schuweweweb</td><td>FK Ried</td><td>Österreich</td><td>319</td><td>2019-04-11</td><td>2020-02-24</td></tr>
+<tr><td>886</td><td>jumping</td><td>Racing Tenerife</td><td>Spanien</td><td>319</td><td>2019-05-11</td><td>2020-03-25</td></tr>
+<tr><td>887</td><td>Guy Incognit0</td><td>BW Sandhausen</td><td>Deutschland</td><td>319</td><td>2019-10-08</td><td>2020-08-22</td></tr>
+<tr><td>888</td><td>Bierkönig 6</td><td>LB Bonfica</td><td>Portugal</td><td>319</td><td>2022-05-13</td><td>2023-03-28</td></tr>
+<tr><td>889</td><td>Romario78</td><td>FK Fanorbohçe</td><td>Türkei</td><td>319</td><td>2023-02-01</td><td>2023-12-17</td></tr>
+<tr><td>890</td><td>Hans Krankl7</td><td>FKA Wacker Mödling</td><td>Österreich</td><td>319</td><td>2023-03-02</td><td>2024-01-15</td></tr>
+<tr><td>891</td><td>Scampi</td><td>1. FC Neckarelz</td><td>Deutschland</td><td>319</td><td>2024-03-23</td><td>2025-02-05</td></tr>
+<tr><td>892</td><td>Jaaduuuxx</td><td>Sunderland City</td><td>England</td><td>318</td><td>2017-05-07</td><td>2018-03-21</td></tr>
+<tr><td>893</td><td>Hilfiger</td><td>Thraki Komotini</td><td>Griechenland</td><td>318</td><td>2018-06-05</td><td>2019-04-19</td></tr>
+<tr><td>894</td><td>Herr Digga </td><td>FC Zagreb</td><td>Kroatien</td><td>318</td><td>2018-11-03</td><td>2019-09-17</td></tr>
+<tr><td>895</td><td>waytonex</td><td>Union Verl</td><td>Deutschland</td><td>318</td><td>2022-01-31</td><td>2022-12-15</td></tr>
+<tr><td>896</td><td>Strucki </td><td>SSV Frankfurt 1897</td><td>Deutschland</td><td>317</td><td>2017-03-12</td><td>2018-01-23</td></tr>
+<tr><td>897</td><td>Juventus FC 1897</td><td>Emilia Bologna</td><td>Italien</td><td>316</td><td>2017-11-27</td><td>2018-10-09</td></tr>
+<tr><td>898</td><td>Mischa</td><td>ZH Winterthur</td><td>Schweiz</td><td>316</td><td>2019-02-15</td><td>2019-12-28</td></tr>
+<tr><td>899</td><td>Gutfreund </td><td>1. FK Vienna 1895</td><td>Österreich</td><td>316</td><td>2023-03-21</td><td>2024-01-31</td></tr>
+<tr><td>900</td><td>Killigang</td><td>Goloboseray FK</td><td>Türkei</td><td>316</td><td>2023-06-13</td><td>2024-04-24</td></tr>
+<tr><td>901</td><td>Stromberg </td><td>GdL Leipzig</td><td>Deutschland</td><td>315</td><td>2017-06-28</td><td>2018-05-09</td></tr>
+<tr><td>902</td><td>TWTitus</td><td>SC Fiorentina</td><td>Italien</td><td>315</td><td>2020-02-06</td><td>2020-12-17</td></tr>
+<tr><td>903</td><td>DelHorno</td><td>FVB Larnaka</td><td>Zypern</td><td>315</td><td>2021-10-10</td><td>2022-08-21</td></tr>
+<tr><td>904</td><td>Penguin</td><td>KFV Rijeka</td><td>Kroatien</td><td>315</td><td>2021-11-29</td><td>2022-10-10</td></tr>
+<tr><td>905</td><td>Droogi</td><td>Thuner SC</td><td>Schweiz</td><td>314</td><td>2020-03-21</td><td>2021-01-29</td></tr>
+<tr><td>906</td><td>Schmelib</td><td>Red Lions Millwall</td><td>England</td><td>313</td><td>2018-12-15</td><td>2019-10-24</td></tr>
+<tr><td>907</td><td>JensG.</td><td>ASC Dakari</td><td>Lettland</td><td>313</td><td>2022-08-04</td><td>2023-06-13</td></tr>
+<tr><td>908</td><td>BSGE</td><td>LOK Sarajevo</td><td>Bosnien und Herzegowina</td><td>312</td><td>2018-01-18</td><td>2018-11-26</td></tr>
+<tr><td>909</td><td>Kloppe</td><td>Athletico Guimarães</td><td>Portugal</td><td>312</td><td>2018-02-25</td><td>2019-01-03</td></tr>
+<tr><td>910</td><td>Derbenn69</td><td>Olympia Berlin</td><td>Deutschland</td><td>312</td><td>2019-05-08</td><td>2020-03-15</td></tr>
+<tr><td>911</td><td>Monta</td><td>ASS Dundee</td><td>Schottland</td><td>312</td><td>2023-05-06</td><td>2024-03-13</td></tr>
+<tr><td>912</td><td>Valentin Toni </td><td>FC Roma</td><td>Italien</td><td>311</td><td>2017-03-05</td><td>2018-01-10</td></tr>
+<tr><td>913</td><td>Mancini</td><td>FF Sollenau 1905</td><td>Österreich</td><td>311</td><td>2021-04-06</td><td>2022-02-11</td></tr>
+<tr><td>914</td><td>Trier</td><td>Brechin Town</td><td>Schottland</td><td>311</td><td>2023-11-02</td><td>2024-09-08</td></tr>
+<tr><td>915</td><td>Jim Tonic</td><td>FC Sabur</td><td>Georgien</td><td>310</td><td>2018-02-24</td><td>2018-12-31</td></tr>
+<tr><td>916</td><td>squirrel</td><td>FC Helsingborg</td><td>Schweden</td><td>310</td><td>2018-08-20</td><td>2019-06-26</td></tr>
+<tr><td>917</td><td>Gepard</td><td>Olimpios Piräus</td><td>Griechenland</td><td>310</td><td>2019-08-17</td><td>2020-06-22</td></tr>
+<tr><td>918</td><td>HerrAnton</td><td>FK Hoppa Steyr</td><td>Österreich</td><td>309</td><td>2017-09-14</td><td>2018-07-20</td></tr>
+<tr><td>919</td><td>Krülli1982</td><td>BO Praha 1903</td><td>Tschechien</td><td>309</td><td>2019-07-11</td><td>2020-05-15</td></tr>
+<tr><td>920</td><td>flitzpiepe</td><td>Roskilde Island</td><td>Dänemark</td><td>309</td><td>2019-12-15</td><td>2020-10-19</td></tr>
+<tr><td>921</td><td>Bulldozer</td><td>ASK Eindhoven</td><td>Niederlande</td><td>309</td><td>2024-09-04</td><td>nan</td></tr>
+<tr><td>922</td><td>Droogi</td><td>HB Edinburgh</td><td>Schottland</td><td>308</td><td>2018-08-17</td><td>2019-06-21</td></tr>
+<tr><td>923</td><td>Samsn</td><td>1.FK Hannover </td><td>Deutschland</td><td>308</td><td>2022-10-07</td><td>2023-08-11</td></tr>
+<tr><td>924</td><td>MK20_Knight</td><td>1. FC Bremer Neustadt</td><td>Deutschland</td><td>307</td><td>2018-12-28</td><td>2019-10-31</td></tr>
+<tr><td>925</td><td>El Gandhi</td><td>AJ Valenciennes</td><td>Frankreich</td><td>307</td><td>2021-08-21</td><td>2022-06-24</td></tr>
+<tr><td>926</td><td>Godzillaghost</td><td>Teutonia Alfter</td><td>Deutschland</td><td>306</td><td>2017-07-26</td><td>2018-05-28</td></tr>
+<tr><td>927</td><td>Penguin</td><td>RFC Monaco</td><td>Frankreich</td><td>306</td><td>2021-01-29</td><td>2021-12-01</td></tr>
+<tr><td>928</td><td>JaRe</td><td>FC Narva Buse</td><td>Estland</td><td>306</td><td>2021-04-26</td><td>2022-02-26</td></tr>
+<tr><td>929</td><td>Ralphi86</td><td>Ariana Limassol</td><td>Zypern</td><td>306</td><td>2024-01-19</td><td>2024-11-20</td></tr>
+<tr><td>930</td><td>JTenner</td><td>AC Palermo </td><td>Italien</td><td>305</td><td>2017-07-20</td><td>2018-05-21</td></tr>
+<tr><td>931</td><td>Nordlicht76</td><td>Breda FC</td><td>Niederlande</td><td>305</td><td>2017-09-04</td><td>2018-07-06</td></tr>
+<tr><td>932</td><td>SimonPurt</td><td>FK Cham</td><td>Schweiz</td><td>305</td><td>2018-04-18</td><td>2019-02-17</td></tr>
+<tr><td>933</td><td>ErkanAlles</td><td>BBC Bissingen</td><td>Deutschland</td><td>305</td><td>2022-09-04</td><td>2023-07-06</td></tr>
+<tr><td>934</td><td>Kollege</td><td>KV Wohlen</td><td>Schweiz</td><td>304</td><td>2017-05-01</td><td>2018-03-01</td></tr>
+<tr><td>935</td><td>Yung Hurn</td><td>Virginia Turin</td><td>Italien</td><td>304</td><td>2024-09-09</td><td>nan</td></tr>
+<tr><td>936</td><td>Trier</td><td>TSG Aschaffenburg 04</td><td>Deutschland</td><td>304</td><td>2024-09-09</td><td>nan</td></tr>
+<tr><td>937</td><td>Mantao </td><td>FK Nancy</td><td>Frankreich</td><td>303</td><td>2017-09-02</td><td>2018-07-02</td></tr>
+<tr><td>938</td><td>A.Donis </td><td>Phoenix Yerevan</td><td>Armenien</td><td>303</td><td>2018-06-23</td><td>2019-04-22</td></tr>
+<tr><td>939</td><td>Efenthius</td><td>Augsburger SV</td><td>Deutschland</td><td>303</td><td>2021-03-13</td><td>2022-01-10</td></tr>
+<tr><td>940</td><td>Andi Brehme</td><td>VC Unión Llevante</td><td>Spanien</td><td>303</td><td>2024-08-14</td><td>2025-06-13</td></tr>
+<tr><td>941</td><td>Benny Lau</td><td>OLFK Bischofswerda</td><td>Deutschland</td><td>302</td><td>2017-05-06</td><td>2018-03-04</td></tr>
+<tr><td>942</td><td>DRUFFWIENIXX </td><td>Borussia Fürth</td><td>Deutschland</td><td>302</td><td>2018-04-12</td><td>2019-02-08</td></tr>
+<tr><td>943</td><td>Mr.Brinkhoff‘s</td><td>Union Aplerbeck</td><td>Deutschland</td><td>302</td><td>2018-09-28</td><td>2019-07-27</td></tr>
+<tr><td>944</td><td>Royal Enfield</td><td>HSV Rathenow</td><td>Deutschland</td><td>302</td><td>2024-09-11</td><td>nan</td></tr>
+<tr><td>945</td><td>Kobo</td><td>FK Nizhny</td><td>Russland</td><td>301</td><td>2017-09-02</td><td>2018-06-30</td></tr>
+<tr><td>946</td><td>Burkadius93</td><td>FK Ried</td><td>Österreich</td><td>301</td><td>2018-02-25</td><td>2018-12-23</td></tr>
+<tr><td>947</td><td>Sultân</td><td>KS Adanaspur</td><td>Türkei</td><td>300</td><td>2018-02-16</td><td>2018-12-13</td></tr>
+<tr><td>948</td><td>Captain Chaos</td><td>SI Hobro</td><td>Dänemark</td><td>299</td><td>2019-03-14</td><td>2020-01-07</td></tr>
+<tr><td>949</td><td>BMG1900</td><td>Cardinal Woking</td><td>England</td><td>299</td><td>2019-04-03</td><td>2020-01-27</td></tr>
+<tr><td>950</td><td>Pinselschwinger</td><td>VfL Steinbach</td><td>Deutschland</td><td>299</td><td>2022-02-04</td><td>2022-11-30</td></tr>
+<tr><td>951</td><td>Mancini</td><td>FKA Wacker Mödling</td><td>Österreich</td><td>299</td><td>2022-02-12</td><td>2022-12-08</td></tr>
+<tr><td>952</td><td>Darmstadt 97</td><td>FC Štip 95</td><td>Mazedonien</td><td>299</td><td>2023-06-26</td><td>2024-04-20</td></tr>
+<tr><td>953</td><td>Chris J</td><td>Eintracht Osnabrück</td><td>Deutschland</td><td>299</td><td>2024-09-14</td><td>nan</td></tr>
+<tr><td>954</td><td>D. Meister</td><td>FK St. Mirror</td><td>Schottland</td><td>298</td><td>2017-07-22</td><td>2018-05-16</td></tr>
+<tr><td>955</td><td>Supercoach</td><td>Desportivo Funchal</td><td>Portugal</td><td>298</td><td>2017-07-29</td><td>2018-05-23</td></tr>
+<tr><td>956</td><td>Murks</td><td>Union Garching</td><td>Deutschland</td><td>298</td><td>2022-08-24</td><td>2023-06-18</td></tr>
+<tr><td>957</td><td>Klaus Toppmöller</td><td>Parathanikaos Athen</td><td>Griechenland</td><td>298</td><td>2023-09-17</td><td>2024-07-11</td></tr>
+<tr><td>958</td><td>Superpip27</td><td>Wésłav Kraków</td><td>Polen</td><td>297</td><td>2021-02-02</td><td>2021-11-26</td></tr>
+<tr><td>959</td><td>Mocca</td><td>HOM Edinburgh</td><td>Schottland</td><td>296</td><td>2018-05-17</td><td>2019-03-09</td></tr>
+<tr><td>960</td><td>#kurtl#</td><td>Racing San Sebastián</td><td>Spanien</td><td>296</td><td>2019-10-01</td><td>2020-07-23</td></tr>
+<tr><td>961</td><td>Poppi </td><td>KF Bosna Kakanj</td><td>Bosnien und Herzegowina</td><td>295</td><td>2017-09-29</td><td>2018-07-21</td></tr>
+<tr><td>962</td><td>VanGraf</td><td>ZH Winterthur</td><td>Schweiz</td><td>295</td><td>2017-11-22</td><td>2018-09-13</td></tr>
+<tr><td>963</td><td>Hauli</td><td>Eintracht Osnabrück</td><td>Deutschland</td><td>295</td><td>2018-09-03</td><td>2019-06-25</td></tr>
+<tr><td>964</td><td>Op79</td><td>Aias Amsterdam FK</td><td>Niederlande</td><td>295</td><td>2019-06-21</td><td>2020-04-11</td></tr>
+<tr><td>965</td><td>Kvikur</td><td>RW Meuselwitz</td><td>Deutschland</td><td>295</td><td>2019-08-15</td><td>2020-06-05</td></tr>
+<tr><td>966</td><td>Wamb0</td><td>Manchester Devils</td><td>England</td><td>295</td><td>2021-05-27</td><td>2022-03-18</td></tr>
+<tr><td>967</td><td>Yurov</td><td>1. FK Vienna 1895</td><td>Österreich</td><td>295</td><td>2022-04-15</td><td>2023-02-04</td></tr>
+<tr><td>968</td><td>Therapeut</td><td>Blau-Schwarz Mannheim</td><td>Deutschland</td><td>295</td><td>2022-05-21</td><td>2023-03-12</td></tr>
+<tr><td>969</td><td>Gegenlandung</td><td>Canaria Las Palmas</td><td>Spanien</td><td>294</td><td>2017-09-25</td><td>2018-07-16</td></tr>
+<tr><td>970</td><td>Norbog</td><td>Sporting Genk</td><td>Belgien</td><td>294</td><td>2018-07-02</td><td>2019-04-22</td></tr>
+<tr><td>971</td><td>Philstaar</td><td>FK Novi Zagreb</td><td>Kroatien</td><td>294</td><td>2019-03-03</td><td>2019-12-22</td></tr>
+<tr><td>972</td><td>Dipitro</td><td>FK Rio do Conde</td><td>Portugal</td><td>294</td><td>2020-08-13</td><td>2021-06-03</td></tr>
+<tr><td>973</td><td>P. Lange</td><td>VfB Elversberg</td><td>Deutschland</td><td>292</td><td>2017-08-24</td><td>2018-06-12</td></tr>
+<tr><td>974</td><td>Norbog</td><td>Sporting Genk</td><td>Belgien</td><td>292</td><td>2017-08-26</td><td>2018-06-14</td></tr>
+<tr><td>975</td><td>Elohim </td><td>TSG Aschaffenburg 04</td><td>Deutschland</td><td>292</td><td>2018-01-10</td><td>2018-10-29</td></tr>
+<tr><td>976</td><td>May </td><td>1.SSV St. Pauli</td><td>Deutschland</td><td>291</td><td>2017-04-26</td><td>2018-02-11</td></tr>
+<tr><td>977</td><td>Chrueso</td><td>Vonat Debrecen</td><td>Ungarn</td><td>290</td><td>2019-02-01</td><td>2019-11-18</td></tr>
+<tr><td>978</td><td>Rob69</td><td>LB Bonfica</td><td>Portugal</td><td>290</td><td>2020-09-19</td><td>2021-07-06</td></tr>
+<tr><td>979</td><td>kohlenturn</td><td>SV Pasching</td><td>Österreich</td><td>289</td><td>2018-04-01</td><td>2019-01-15</td></tr>
+<tr><td>980</td><td>Florian Frohsinn</td><td>FV Sevilla</td><td>Spanien</td><td>289</td><td>2021-08-15</td><td>2022-05-31</td></tr>
+<tr><td>981</td><td>Spartacus777</td><td>Liverpool Reds</td><td>England</td><td>287</td><td>2018-09-20</td><td>2019-07-04</td></tr>
+<tr><td>982</td><td>VfL 1899</td><td>Dinamyt Minsk</td><td>Weißrussland</td><td>287</td><td>2022-02-05</td><td>2022-11-19</td></tr>
+<tr><td>983</td><td>DJAttic</td><td>UCKA Moskva</td><td>Russland</td><td>287</td><td>2022-09-13</td><td>2023-06-27</td></tr>
+<tr><td>984</td><td>Daywaker</td><td>CV Milan</td><td>Italien</td><td>286</td><td>2017-02-09</td><td>2017-11-22</td></tr>
+<tr><td>985</td><td>Minimonster </td><td>Nottingham Soccer</td><td>England</td><td>286</td><td>2018-05-22</td><td>2019-03-04</td></tr>
+<tr><td>986</td><td>Thorgen Kloppel</td><td>Hessen Lehnerz</td><td>Deutschland</td><td>286</td><td>2021-04-12</td><td>2022-01-23</td></tr>
+<tr><td>987</td><td>BFCDYNAMO1966 </td><td>Dynamit Berlin CF</td><td>Deutschland</td><td>286</td><td>2022-04-06</td><td>2023-01-17</td></tr>
+<tr><td>988</td><td>Stili</td><td>Ballsport Dortmund</td><td>Deutschland</td><td>286</td><td>2023-02-08</td><td>2023-11-21</td></tr>
+<tr><td>989</td><td>Lumpinho</td><td>Dynamit Moskva</td><td>Russland</td><td>285</td><td>2017-08-03</td><td>2018-05-15</td></tr>
+<tr><td>990</td><td>Ilarin</td><td>RSD Ferrol</td><td>Spanien</td><td>284</td><td>2023-05-30</td><td>2024-03-09</td></tr>
+<tr><td>991</td><td>Sam Jackson</td><td>Italia Wolfsburg</td><td>Deutschland</td><td>283</td><td>2019-03-03</td><td>2019-12-11</td></tr>
+<tr><td>992</td><td>Jerry</td><td>SSK Lankowitz</td><td>Österreich</td><td>283</td><td>2019-05-27</td><td>2020-03-05</td></tr>
+<tr><td>993</td><td>Yxcvb</td><td>KF Široki Brijeg 1948</td><td>Bosnien und Herzegowina</td><td>283</td><td>2020-05-21</td><td>2021-02-28</td></tr>
+<tr><td>994</td><td>Mantao </td><td>OS St.-Étienne</td><td>Frankreich</td><td>282</td><td>2018-10-08</td><td>2019-07-17</td></tr>
+<tr><td>995</td><td>Gerry Bluemug</td><td>Bangor Town</td><td>Wales</td><td>282</td><td>2020-04-06</td><td>2021-01-13</td></tr>
+<tr><td>996</td><td>Asch_9</td><td>Borussia Northeim</td><td>Deutschland</td><td>281</td><td>2017-08-09</td><td>2018-05-17</td></tr>
+<tr><td>997</td><td>Kampfpetersilie</td><td>London`s Park Rangers</td><td>England</td><td>281</td><td>2017-10-24</td><td>2018-08-01</td></tr>
+<tr><td>998</td><td>Winfling</td><td>RBS Pforzheim</td><td>Deutschland</td><td>281</td><td>2017-11-20</td><td>2018-08-28</td></tr>
+<tr><td>999</td><td>Xellron</td><td>Sempedoria Genua</td><td>Italien</td><td>281</td><td>2018-07-04</td><td>2019-04-11</td></tr>
+<tr><td>1000</td><td>DasTor</td><td>Cardiff Dragons</td><td>England</td><td>281</td><td>2019-03-20</td><td>2019-12-26</td></tr>
+
+    </tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var table = $('#treueTabelle').DataTable({
+            scrollX: true,
+            paging: true,
+            searching: true,
+            ordering: true,
+            order: [[4, "desc"]],
+            columnDefs: [
+                {
+                    targets: 0,
+                    searchable: false,
+                    orderable: false
+                }
+            ]
+        });
+
+        table.on('order.dt search.dt draw.dt', function () {
+            table.column(0, {search:'applied', order:'applied'}).nodes().each(function (cell, i) {
+                cell.innerHTML = i + 1;
+            });
+        }).draw();
+
+        // Filter auf Spalte "Land" über bekannten Index
+        var landIndex = 3;
+        var select = $('#filterLand');
+        table.column(landIndex).data().unique().sort().each(function (d) {
+            if (d !== null && d !== "") {
+                select.append('<option value="'+d+'">'+d+'</option>');
+            }
+        });
+        select.on('change', function () {
+            var val = $.fn.dataTable.util.escapeRegex($(this).val());
+            table.column(landIndex).search(val ? '^'+val+'$' : '', true, false).draw();
+        });
+    });
+</script>
+
+</body>
+</html>
