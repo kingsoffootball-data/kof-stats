@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Titelsammler – Auswahl</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b1220; --card:rgba(255,255,255,.06); --line:rgba(255,255,255,.12);
+            --text:rgba(255,255,255,.92); --muted:rgba(255,255,255,.68); --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px; }
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background: radial-gradient(1200px 700px at 10% 10%, rgba(66,153,225,.25), transparent 50%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(236,72,153,.18), transparent 55%),
+                  radial-gradient(900px 600px at 40% 90%, rgba(34,197,94,.14), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+    .wrap{ max-width:1100px; margin:28px auto 40px; padding:0 16px; }
+    h1{ font-size:22px; margin:0 0 6px; }
+    .meta{ color:var(--muted); font-size:13px; margin-bottom:14px; }
+    .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; }
+    .card{
+      background: linear-gradient(180deg, var(--card), rgba(255,255,255,.03));
+      border:1px solid var(--line); border-radius:var(--radius);
+      box-shadow:var(--shadow); padding:16px;
+    }
+    .card h2{ font-size:16px; margin:0 0 6px; }
+    .card p{ margin:0 0 12px; color:var(--muted); font-size:13px; }
+    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; }
+    a.btn{
+      display:inline-block; text-decoration:none; color:var(--text);
+      border:1px solid rgba(255,255,255,.14); background:rgba(255,255,255,.06);
+      padding:10px 12px; border-radius:12px;
+    }
+    a.btn:hover{ background:rgba(255,255,255,.10); }
+    a.back{ color:var(--muted); text-decoration:none; }
+    a.back:hover{ color:var(--text); text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Titelsammler – Auswahl</h1>
+    <div class="meta">Pro Welt: „Titelträger Saisons“ (CSV-Struktur) oder „Titel pro Verein“ (kumuliert nach Liga-Klasse 1–6, national, international).</div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Welt 1</h2>
+        <p>Stand: Saison 71</p>
+        <div class="btnrow">
+          <a class="btn" href="titelsammler_welt1_saisons.html">Titelträger Saisons</a>
+          <a class="btn" href="titelsammler_welt1_verein.html">Titel pro Verein</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Welt 2</h2>
+        <p>Stand: Saison 67</p>
+        <div class="btnrow">
+          <a class="btn" href="titelsammler_welt2_saisons.html">Titelträger Saisons</a>
+          <a class="btn" href="titelsammler_welt2_verein.html">Titel pro Verein</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Welt 3</h2>
+        <p>Stand: Saison 67</p>
+        <div class="btnrow">
+          <a class="btn" href="titelsammler_welt3_saisons.html">Titelträger Saisons</a>
+          <a class="btn" href="titelsammler_welt3_verein.html">Titel pro Verein</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="meta" style="margin-top:16px;">
+      <a class="back" href="ewige_tabelle_index.html">⇦ Zur Ewigen Tabelle</a>
+      &nbsp;•&nbsp;
+      <a class="back" href="trendbarometer_index.html">⇦ Zum Trendbarometer</a>
+    </div>
+  </div>
+</body>
+</html>

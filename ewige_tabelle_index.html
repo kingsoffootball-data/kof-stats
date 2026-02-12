@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ewige Tabelle – KoF Stats</title>
+<style>
+:root { --bg:#0b0f14; --card:#101826; --text:#e8eef7; --muted:#9fb0c6; --line:rgba(255,255,255,.08); }
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% -10%, rgba(120,180,255,.18), transparent 60%),radial-gradient(900px 500px at 90% 0%, rgba(165,80,255,.14), transparent 55%),var(--bg);color:var(--text);}
+.container{max-width:900px;margin:42px auto;padding:0 16px;}
+h1{margin:0 0 10px;font-size:26px;}
+p{margin:0 0 22px;color:var(--muted);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+a.card{display:block;text-decoration:none;color:var(--text);background:rgba(16,24,38,.85);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.28);}
+a.card:hover{border-color:rgba(120,180,255,.55);background:rgba(120,180,255,.08);}
+.small{color:var(--muted);font-size:13px;margin-top:6px;}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ewige Tabelle</h1>
+    <p>Wähle eine Welt. Jede Tabelle ist sortier- und filterbar (DataTables) inkl. CSV-Export.</p>
+    <div class="grid">
+      <a class="card" href="ewige_tabelle_welt1.html">
+        <div><strong>Welt 1</strong></div>
+        <div class="small">Stand: Saison 71</div>
+      </a>
+      <a class="card" href="ewige_tabelle_welt2.html">
+        <div><strong>Welt 2</strong></div>
+        <div class="small">Stand: Saison 67</div>
+      </a>
+      <a class="card" href="ewige_tabelle_welt3.html">
+        <div><strong>Welt 3</strong></div>
+        <div class="small">Stand: Saison 67</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
