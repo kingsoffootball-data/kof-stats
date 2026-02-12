@@ -110,7 +110,8 @@ td.text, th.text { text-align: left; }
 thead tr.filters th {
   padding: 6px 8px;
 }
-thead tr.filters input {
+thead tr.filters input,
+thead tr.filters select {
   width: 100%;
   box-sizing: border-box;
   background: rgba(255,255,255,.06);
@@ -156,14 +157,14 @@ thead tr.filters input {
           </tr>
           <tr class="filters">
             <th></th>
-            <th><input type="text" placeholder="Filter Verein"></th>
-            <th><input type="text" placeholder="Filter Land"></th>
-            <th><input type="text" placeholder="Filter"></th>
-            <th><input type="text" placeholder="Filter"></th>
-            <th><input type="text" placeholder="Filter"></th>
-            <th><input type="text" placeholder="Filter"></th>
-            <th><input type="text" placeholder="Filter"></th>
-            <th><input type="text" placeholder="Filter"></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -3514,26 +3515,58 @@ thead tr.filters input {
 <script>
 $(function() {
   var table = new DataTable('#tbl', {
-    pageLength: 50,
-    lengthMenu: [[25,50,100,250,-1],[25,50,100,250,'Alle']],
+    pageLength: 25,
+    lengthMenu: [[25,50,100,200,-1],[25,50,100,200,'Alle']],
     order: [[7,'desc'],[6,'desc'],[4,'desc']],
     dom: 'Blfrtip',
+    autoWidth: true,
     buttons: [
       { extend: 'copyHtml5', text: 'Kopieren' },
       { extend: 'csvHtml5', text: 'CSV export' }
     ],
-    fixedHeader: true
+    fixedHeader: true,
+    initComplete: function() {
+      var api = this.api();
+
+      api.columns().every(function(colIdx) {
+        var column = this;
+        var th = $('#tbl thead tr.filters th').eq(colIdx);
+
+        // Keine Filter für Rang
+        if (colIdx === 0) {
+          th.empty();
+          return;
+        }
+
+        var select = $('<select><option value="">Alle</option></select>')
+          .appendTo(th.empty())
+          .on('change', function() {
+            var val = $(this).val();
+            var safe = $.fn.dataTable.util.escapeRegex(val);
+            column.search(val ? '^' + safe + '$' : '', true, false).draw();
+          });
+
+        // Unique Werte (als Text ohne HTML)
+        var uniq = {};
+        column.data().each(function(d) {
+          var t = $('<div>').html(d).text().trim();
+          if (t !== '') uniq[t] = true;
+        });
+
+        Object.keys(uniq).sort(function(a,b){
+          return a.localeCompare(b, 'de', { sensitivity: 'base' });
+        }).forEach(function(v){
+          select.append($('<option></option>').attr('value', v).text(v));
+        });
+      });
+
+      api.columns.adjust();
+    }
   });
 
-  // column filters
-  $('#tbl thead tr.filters th').each(function(i) {
-    var input = $('input', this);
-    if (!input.length) return;
-    input.on('keyup change', function() {
-      if (table.column(i).search() !== this.value) {
-        table.column(i).search(this.value).draw();
-      }
-    });
+  // bei Resize sauber nachziehen
+  $(window).on('resize', function() {
+    table.columns.adjust();
   });
 });
 </script>
